@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#142A45">
+<meta name="description" content="아이슬란드·핀란드 여행 일정 · 지도 · 맛집 · 체크리스트">
+<title>아이슬란드·핀란드 여행</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="leaflet.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="hrow">
+    <div>
+      <div class="htitle">아이슬란드 · 핀란드</div>
+      <div class="hsub">9/9(수) – 9/17(목) · 오로라 헌팅 &amp; 빙하투어</div>
+    </div>
+    <div id="netdot" class="netdot" aria-live="polite" title="연결 상태">●</div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ========== 지도 + 일정 (한 화면) ========== -->
+  <section id="view-map" class="view vmap">
+    <div id="map" role="application" aria-label="여행 동선 지도"></div>
+
+    <div class="mapover" id="mapDaybar" role="tablist" aria-label="날짜 선택"></div>
+
+    <div class="fabs">
+      <button class="fab" id="btnLoc" type="button" aria-label="내 위치">📍</button>
+      <button class="fab" id="btnFit" type="button" aria-label="전체 경로 보기">⤢</button>
+      <button class="fab" id="btnFood" type="button" aria-label="맛집 표시" aria-pressed="false">🍽️</button>
+    </div>
+
+    <div id="sheet" class="peek">
+      <button class="grip" id="grip" type="button" aria-expanded="false" aria-controls="stopList">
+        <span class="gripbar"></span>
+        <span class="griptext" id="gripText">위로 올리면 전체 일정</span>
+      </button>
+      <div id="stopList" class="stoplist"></div>
+    </div>
+  </section>
+
+  <!-- ========== 일정 전체 ========== -->
+  <section id="view-plan" class="view vscroll" hidden>
+    <div class="daybar" id="daybar" role="tablist" aria-label="날짜 선택"></div>
+    <div id="planBody"></div>
+    <div class="savewrap">
+      <button class="save" id="btnSave" type="button">이 지역 지도 미리 저장</button>
+      <div class="savenote" id="saveNote">
+        와이파이에서 한 번 눌러두면 오프라인에서도 지도가 보여요. (레이캬비크·남부해안·헬싱키 3개 구역)
+      </div>
+      <div class="bar" id="saveBar" hidden><span id="saveFill"></span></div>
+    </div>
+  </section>
+
+  <!-- ========== 맛집 ========== -->
+  <section id="view-food" class="view vscroll" hidden>
+    <div class="chips" id="chips"></div>
+    <div id="foodBody"></div>
+  </section>
+
+  <!-- ========== 체크리스트 ========== -->
+  <section id="view-check" class="view vscroll" hidden>
+    <div class="checkhead">
+      <div class="checkprog" id="checkProg">0 / 0 완료</div>
+      <button class="checkreset" id="btnCheckReset" type="button">전체 초기화</button>
+    </div>
+    <div id="checkBody"></div>
+  </section>
+
+</main>
+
+<nav id="tabbar" role="tablist" aria-label="화면 전환">
+  <button class="tab on" data-v="map" type="button" role="tab" aria-selected="true">
+    <span class="ti">🗺️</span><span class="tl">지도+일정</span>
+  </button>
+  <button class="tab" data-v="plan" type="button" role="tab" aria-selected="false">
+    <span class="ti">📋</span><span class="tl">일정 전체</span>
+  </button>
+  <button class="tab" data-v="food" type="button" role="tab" aria-selected="false">
+    <span class="ti">🍽️</span><span class="tl">맛집</span>
+  </button>
+  <button class="tab" data-v="check" type="button" role="tab" aria-selected="false">
+    <span class="ti">✅</span><span class="tl">체크리스트</span>
+  </button>
+</nav>
+
+<script src="leaflet.js"></script>
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function (e) {
+      console.warn('SW 등록 실패', e);
+    });
+  });
+}
+</script>
+</body>
+</html>
