@@ -37,8 +37,12 @@ var DATA = {
       { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús", lat:64.149139, lng:-21.940938, cat:"관광", move:"⭐Kjarvalsstaðir에서 시티 카드 수령 (숙소서 도보 9분) → 🚌 버스로 이동 (카드로 무료)", note:"24시간권이면 내일 13:00쯤까지 · 입장료 2,550 ISK 카드로 무료 · 매일 10-17(목~22) · Erró 상설전" },
       { t:"14:30", name:"Kolaportið 벼룩시장", lat:64.148933, lng:-21.938775, cat:"쇼핑", move:"바로 옆 건물, 도보 1분", note:"토·일 11:00~17:00만 운영 · 입장 무료" },
       { t:"15:30", name:"늦은 점심 — Old Harbour HOT DOGS", lat:64.151190, lng:-21.944257, cat:"간식", move:"도보 6분 (10분 미만이라 걸어감)", note:"매일 11:00~20:00 · Bæjarins Beztu보다 한적하고 대기 적음" },
-      { t:"16:15", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 이용 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두) · 마감 18시니 여유 확인" },
-      { t:"17:45", name:"숙소 복귀, 저녁은 집에서", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"도보 35분 → 🚌 버스 이용 (시티카드 무료)", note:"컨디션 안 좋아 술은 패스 · 푹 쉬고 투어 준비" },
+      { t:"16:00", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 이용 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두) · 마감 18시니 여유 확인" },
+      { t:"18:00", name:"Harpa (야경)", lat:64.150246, lng:-21.932280, cat:"관광", move:"도보 25분 → 🚌 버스 이용 (시티카드 무료)", note:"내부 관람 무료 · 저녁엔 유리 파사드 조명 들어옴 · 대안: Aurora Reykjavík(도보 5분, 19시 마감) / Valdís 아이스크림(23시까지)" },
+      { t:"18:30", name:"Sun Voyager (Sólfar)", lat:64.147631, lng:-21.922285, cat:"관광", move:"해안 산책로 따라 도보 12분", note:"24시간 무료 · 바이킹 배 형상 조각 · 숙소 방향이라 그대로 귀가하면 됨" },
+      { t:"19:30", name:"숙소에서 저녁", lat:64.1437875, lng:-21.9126406, cat:"식사", move:"도보 9분", note:"Old Harbour에서 핫도그+맥주 했으니 가볍게" },
+      { t:"20:30", name:"오로라 투어 픽업 장소로 이동", lat:64.1443797, lng:-21.9104986, cat:"이동", move:"도보 2분", note:"Bus Stop 12 Höfðatorg" },
+
       { t:"21:00~02:00", name:"오로라 투어 #2", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"Northern Lights Guided Tour · 픽업 장소 바우처 확인" }
     ]},
     { id:4, color:"#26617F", theme:"자유시간 · 오로라 재도전", date:"9/13 (일)", iso:"2026-09-13", stops:[
