@@ -34,7 +34,7 @@ var DATA = {
       { t:"20:30", name:"투어 종료, Bus Stop 12 Höfðatorg 하차", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"실제 도착 시간 · 숙소까지 도보 2분" }
     ]},
     { id:3, color:"#4B3F91", theme:"자유시간 · 오로라#2", date:"9/12 (토)", iso:"2026-09-12", stops:[
-      { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús ⭐시티카드 수령", lat:64.149139, lng:-21.940938, cat:"관광", move:"늦잠·컨디션 난조로 13:00 출발 · 숙소에서 🚌 버스 (카드 수령 전이라 단품 690 ISK)", note:"⭐온라인 바우처 → 실물 카드 교환 (매일 10-17) · 24시간권이면 내일 13:20까지 · 입장료 2,550 ISK 카드로 무료 · Erró 상설전" },
+      { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús", lat:64.149139, lng:-21.940938, cat:"관광", move:"⭐Kjarvalsstaðir에서 시티 카드 수령 (숙소서 도보 9분) → 🚌 버스로 이동 (카드로 무료)", note:"24시간권이면 내일 13:00쯤까지 · 입장료 2,550 ISK 카드로 무료 · 매일 10-17(목~22) · Erró 상설전" },
       { t:"14:30", name:"Kolaportið 벼룩시장", lat:64.148933, lng:-21.938775, cat:"쇼핑", move:"바로 옆 건물, 도보 1분", note:"토·일 11:00~17:00만 운영 · 입장 무료" },
       { t:"15:30", name:"늦은 점심 — Old Harbour HOT DOGS", lat:64.151190, lng:-21.944257, cat:"간식", move:"도보 6분 (10분 미만이라 걸어감)", note:"매일 11:00~20:00 · Bæjarins Beztu보다 한적하고 대기 적음" },
       { t:"16:15", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 이용 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두) · 마감 18시니 여유 확인" },
