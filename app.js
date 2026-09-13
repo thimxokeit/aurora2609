@@ -21,7 +21,9 @@ var DATA = {
       { t:"14:20", name:"SPAR (Barónsstígur)에서 장보기", lat:64.144547, lng:-21.918583, cat:"쇼핑", note:"24시간 운영" },
       { t:"15:00", name:"숙소 체크인 (Bríetartún 18)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"Luggage Lockers에서 짐 찾아서 이동" },
       { t:"16:00", name:"Sundhöll Reykjavíkur — 수영장·온탕·사우나", lat:64.141829, lng:-21.920652, cat:"휴식", note:"목요일 15:00~22:00 · Hallgrímskirkja와 같은 건축가(Guðjón Samúelsson) 작품 · 성인 1,380 ISK · 수영복 대여 가능 · 탕 들어가기 전 알몸 샤워는 필수(성별 분리)" },
-      { t:"19:30", name:"숙소에서 휴식 (오로라 투어 취소됨)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"악천후로 취소 · 무료 재예약 진행 → Day4로 이동 · 만약 안 쉬었다면 대안 2곳: ① Café Loki(Lokastígur 28, 매일 8-22, 도보 5분, 램수프 추천) ② Vínyl Bistro(도보 6분, 비건 전문, 레코드 인테리어)" }
+      { t:"19:30", name:"숙소에서 휴식 (오로라 투어 취소됨)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"악천후로 취소 · 무료 재예약 진행 → Day4로 이동" },
+      { alt:true, t:"", name:"Café Loki", lat:64.142403, lng:-21.928852, cat:"식사", note:"쉬지 않았다면 · Lokastígur 28, 도보 5분, ~22시 · 램수프·호밀빵 아이스크림" },
+      { alt:true, t:"", name:"Skúli Craft Bar", lat:64.147554, lng:-21.941615, cat:"나이트라이프", note:"쉬지 않았다면 · Aðalstræti 9, ~23시 · 아이슬란드 크래프트 맥주" }
     ]},
     { id:2, color:"#2A6F8E", theme:"빙하투어 (남부해안)", date:"9/11 (금)", iso:"2026-09-11", stops:[
       { t:"07:00", name:"투어 출발 (숙소 인근 픽업)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"정확한 픽업시간은 바우처로 재확인" },
@@ -36,13 +38,9 @@ var DATA = {
     { id:3, color:"#4B3F91", theme:"자유시간 · 오로라#2", date:"9/12 (토)", iso:"2026-09-12", stops:[
       { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús", lat:64.149139, lng:-21.940938, cat:"관광", move:"⭐Kjarvalsstaðir에서 시티 카드 수령 (숙소서 도보 9분) → 🚌 버스로 이동 (카드로 무료)", note:"24시간권이면 내일 13:00쯤까지 · 입장료 2,550 ISK 카드로 무료 · 매일 10-17(목~22) · Erró 상설전" },
       { t:"14:30", name:"Kolaportið 벼룩시장", lat:64.148933, lng:-21.938775, cat:"쇼핑", move:"바로 옆 건물, 도보 1분", note:"토·일 11:00~17:00만 운영 · 입장 무료" },
-      { t:"15:30", name:"Old Harbour HOT DOGS", lat:64.151190, lng:-21.944257, cat:"간식", move:"도보 6분 (10분 미만이라 걸어감)", note:"매일 11:00~20:00 · Bæjarins Beztu보다 한적하고 대기 적음" },
-      { t:"16:00", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 이용 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두) · 마감 18시니 여유 확인" },
-      { t:"18:00", name:"Harpa (야경)", lat:64.150246, lng:-21.932280, cat:"관광", move:"도보 25분 → 🚌 버스 이용 (시티카드 무료)", note:"내부 관람 무료 · 저녁엔 유리 파사드 조명 들어옴 · 대안: Aurora Reykjavík(도보 5분, 19시 마감) / Valdís 아이스크림(23시까지)" },
-      { t:"18:30", name:"Sun Voyager (Sólfar)", lat:64.147631, lng:-21.922285, cat:"관광", move:"해안 산책로 따라 도보 12분", note:"24시간 무료 · 바이킹 배 형상 조각 · 숙소 방향이라 그대로 귀가하면 됨" },
-      { t:"19:30", name:"숙소에서 저녁", lat:64.1437875, lng:-21.9126406, cat:"식사", move:"도보 9분", note:"Old Harbour에서 핫도그+맥주 했으니 가볍게" },
-      { t:"20:30", name:"오로라 투어 픽업 장소로 이동", lat:64.1443797, lng:-21.9104986, cat:"이동", move:"도보 2분", note:"Bus Stop 12 Höfðatorg" },
-
+      { t:"15:30", name:"늦은 점심 — Old Harbour HOT DOGS", lat:64.151190, lng:-21.944257, cat:"간식", move:"도보 6분 (10분 미만이라 걸어감)", note:"매일 11:00~20:00 · Bæjarins Beztu보다 한적하고 대기 적음" },
+      { t:"16:15", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 이용 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두) · 마감 18시니 여유 확인" },
+      { t:"17:45", name:"숙소 복귀, 저녁은 집에서", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"도보 35분 → 🚌 버스 이용 (시티카드 무료)", note:"컨디션 안 좋아 술은 패스 · 푹 쉬고 투어 준비" },
       { t:"21:00~02:00", name:"오로라 투어 #2", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"Northern Lights Guided Tour · 픽업 장소 바우처 확인" }
     ]},
     { id:4, color:"#26617F", theme:"자유시간 · 오로라 재도전", date:"9/13 (일)", iso:"2026-09-13", stops:[
@@ -51,11 +49,10 @@ var DATA = {
       { t:"12:30", name:"The Settlement Exhibition (정착 전시관)", lat:64.147399, lng:-21.942501, cat:"관광", move:"도보 6분", note:"⏰카드 만료 직전 입장 · 입장료 약 2,500 ISK 커버 · 1000년 전 롱하우스 발굴 유적" },
       { t:"14:15", name:"Reykjavík Roasters 커피", lat:64.1436111, lng:-21.9266667, cat:"카페", move:"도보 16분 (여기부터는 카드 만료 → 전부 도보)", note:"매일 7:00~17:00 · 자가배전" },
       { t:"14:45", name:"Braud & Co에서 빵 구매 (내일 비행기용)", lat:64.1440791, lng:-21.9259781, cat:"빵집", move:"도보 3분, 바로 옆", note:"매일 6:30~17:00 · 대안: Sandholt(도보 3분, ~18:00) / BakaBaka(~22:00)" },
-      { t:"15:30", name:"Grótta 등대 (Seltjarnarnes)", lat:64.163889, lng:-22.021389, cat:"관광", move:"🚌 11번 버스 (카드 13:30 만료 → 편도 690 ISK 결제) + 도보 15분", note:"⚠️ 조수에 따라 둑길이 잠김 — 출발 전 물때 확인 필수 · 무료 · 바람 강하니 방한 단단히 · Kvika 족욕탕도 근처" },
-      { t:"18:00", name:"숙소 복귀 · 짐 챙기기", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"🚌 11번 버스 (690 ISK)", note:"투어 직전에 하면 급해지니 미리 · 04:00 Flybus까지 그대로 들고 나갈 상태로" },
+      { t:"15:15", name:"숙소 복귀 · 휴식", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"도보 12분" },
       { t:"19:00", name:"숙소에서 저녁", lat:64.1437875, lng:-21.9126406, cat:"식사", note:"SPAR에서 산 재료로 간단히" },
       { t:"20:30", name:"짐 챙기기", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"투어 끝나고 바로 04:00 Flybus라 지금 다 싸두기" },
-      { t:"21:30~02:00", name:"오로라 투어 (Day1 취소분 재예약)", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"⚠️ 투어 종료~04:00 Flybus 픽업까지 휴식시간이 약 2시간뿐" },
+      { t:"21:30~약02:00", name:"오로라 투어 (Day1 취소분 재예약)", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"⚠️ 투어 종료~04:00 Flybus 픽업까지 휴식시간이 약 2시간뿐" },
       { t:"04:00(+1)", name:"Flybus 픽업 (다음날 새벽)", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"바로 이어지는 일정이니 투어 중에도 시간 체크" }
     ]},
     { id:5, color:"#7A4E97", theme:"아이슬란드 → 헬싱키", date:"9/14 (월)", iso:"2026-09-14", stops:[
@@ -214,9 +211,15 @@ function isToday(d){ return d.iso === TODAY_ISO; }
 
 /* ---------- 번호 매기기 ---------- */
 function stopLabels(day){
-  var out=[], main=0;
+  var out=[], main=0, sub=0;
   day.stops.forEach(function(s){
-    main++; out.push(String(main));
+    if (s.alt){
+      sub++;
+      out.push(String.fromCharCode(64+sub));   // A, B, C...
+    } else {
+      main++; sub=0;
+      out.push(String(main));
+    }
   });
   return out;
 }
@@ -251,10 +254,15 @@ function buildDaybar(el, current, onPick){
 function stopHTML(s, i, day, label){
   var col = CAT_COLOR[s.cat] || day.color;
   return (s.move ? "<div class='conn'><span class='conn-ic'>➜</span>" + esc(s.move) + "</div>" : "") +
-         "<div class='stop' data-i='" + i + "'>" +
-           "<div class='no' style='background:" + col + "'>" + (label || (i+1)) + "</div>" +
+         "<div class='stop" + (s.alt ? " subrow" : "") + "' data-i='" + i + "'>" +
+           (s.alt
+             ? "<div class='no alt' style='color:" + col + ";border-color:" + col + "'>" + (label || "A") + "</div>"
+             : "<div class='no' style='background:" + col + "'>" + (label || (i+1)) + "</div>") +
            "<div class='bd'>" +
-             "<div class='tm'>" + esc(s.t + " · " + s.cat) + "</div>" +
+             "<div class='tm'>" +
+               (s.alt ? "<span class='altlabel sublabel'>대안</span> " : "") +
+               esc(s.alt ? s.cat : s.t + " · " + s.cat) +
+             "</div>" +
              "<div class='nm'>" + esc(s.name) + "</div>" +
              (s.note ? "<div class='nt'>" + esc(s.note) + "</div>" : "") +
              "<a class='go' href='" + gmaps(s.lat,s.lng) + "' target='_blank' rel='noopener'>길찾기</a>" +
@@ -435,7 +443,8 @@ function drawDay(fit){
   var d = dayById(mapDay);
   var LB = stopLabels(d);
 
-  var mainPts = d.stops.map(function(s){ return [s.lat,s.lng]; });
+  var mainPts = d.stops.filter(function(s){ return !s.alt; })
+                       .map(function(s){ return [s.lat,s.lng]; });
   if (mainPts.length > 1){
     L.polyline(mainPts, {color:d.color, weight:4, opacity:.85, dashArray:"1,9", lineCap:"round"})
      .addTo(dayLayer);
@@ -443,13 +452,15 @@ function drawDay(fit){
 
   d.stops.forEach(function(s,i){
     var col = CAT_COLOR[s.cat] || d.color;
-    var pinHTML = "<div class='num-pin' style='background:"+d.color+"'><span>"+LB[i]+"</span></div>";
+    var pinHTML = s.alt
+      ? "<div class='num-pin alt' style='color:"+col+";border-color:"+col+"'><span>"+LB[i]+"</span></div>"
+      : "<div class='num-pin' style='background:"+d.color+"'><span>"+LB[i]+"</span></div>";
 
     var m = L.marker([s.lat,s.lng], {
       icon: L.divIcon({ className:"", html:pinHTML,
         iconSize:[30,30], iconAnchor:[15,28], popupAnchor:[0,-26] })
     }).bindPopup(
-      "<div class='pp-c' style='color:"+col+"'>"+esc(s.t)+" · "+esc(s.cat)+"</div>"+
+      "<div class='pp-c' style='color:"+col+"'>"+(s.alt ? "대안 · " : esc(s.t)+" · ")+esc(s.cat)+"</div>"+
       "<div class='pp-n'>"+LB[i]+". "+esc(s.name)+"</div>"+
       (s.note ? "<div class='pp-t'>"+esc(s.note)+"</div>" : "")+
       "<a class='pp-l' href='"+gmaps(s.lat,s.lng)+"' target='_blank' rel='noopener'>📍 길찾기</a>"
@@ -464,7 +475,9 @@ function drawDay(fit){
 
 function fitDay(){
   var d = dayById(mapDay);
-  var pts = d.stops.map(function(s){ return [s.lat,s.lng]; });
+  var pts = d.stops.filter(function(s){ return !s.alt; })
+                   .map(function(s){ return [s.lat,s.lng]; });
+  if (!pts.length) pts = d.stops.map(function(s){ return [s.lat,s.lng]; });
   var pad = $('sheet').classList.contains('open')
             ? Math.round(window.innerHeight * 0.72)
             : sheetPeekPx();
@@ -658,6 +671,34 @@ $('btnLoc').addEventListener('click', function(){
 });
 
 $('btnSave').addEventListener('click', prefetchTiles);
+
+/* 최신 내용으로 새로고침 — 앱 파일 캐시를 비우고 다시 받아옴 */
+$('btnReload').addEventListener('click', function(){
+  var b = this;
+  b.classList.add('spin');
+  if (!navigator.onLine){
+    b.classList.remove('spin');
+    alert("인터넷에 연결된 상태에서 눌러주세요.");
+    return;
+  }
+  var jobs = [];
+  if (window.caches){
+    jobs.push(caches.keys().then(function(keys){
+      return Promise.all(keys.map(function(k){
+        /* 지도 타일 캐시는 그대로 두고 앱 파일 캐시만 삭제 */
+        if (k.indexOf('tiles') === -1) return caches.delete(k);
+      }));
+    }));
+  }
+  if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations){
+    jobs.push(navigator.serviceWorker.getRegistrations().then(function(rs){
+      return Promise.all(rs.map(function(r){ return r.update(); }));
+    }));
+  }
+  Promise.all(jobs).catch(function(){}).then(function(){
+    location.reload(true);
+  });
+});
 
 window.addEventListener('resize', function(){
   if (map) setTimeout(function(){ map.invalidateSize(); }, 120);
