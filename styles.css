@@ -41,8 +41,16 @@ header{
 .hrow{display:flex;align-items:center;gap:10px;}
 .htitle{font-size:1.08rem;font-weight:800;letter-spacing:-.2px;}
 .hsub{font-size:.75rem;color:#A9BED2;margin-top:2px;}
-.netdot{margin-left:auto;font-size:.7rem;line-height:1;color:#4ADE80;padding:6px;}
+.netdot{font-size:.7rem;line-height:1;color:#4ADE80;padding:6px;}
 .netdot.off{color:#FBBF24;}
+.reload{
+  margin-left:auto;width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);
+  color:#fff;font-size:1.1rem;line-height:1;font-family:inherit;
+}
+.reload:active{background:rgba(255,255,255,.2);}
+.reload.spin{animation:sp .8s linear infinite;}
+@keyframes sp{to{transform:rotate(360deg);}}
 
 /* ---------------- Main ---------------- */
 #main{flex:1 1 auto;position:relative;min-height:0;}
@@ -151,6 +159,28 @@ header{
   flex:0 0 auto;width:27px;height:27px;border-radius:50%;
   color:#fff;font-size:.8rem;font-weight:800;
   display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+
+/* 대안(하위) 항목 */
+.stop.subrow{
+  border-left:3px solid var(--line);
+  background:#F7F9FA;
+  margin-left:14px;
+}
+.stop.subrow .no.alt{
+  background:#fff;border:2px solid;
+}
+.stop.subrow .nm{font-size:.93rem;}
+.altlabel{
+  display:inline-block;padding:1px 7px;border-radius:9px;
+  background:var(--gray-l);color:#fff;
+  font-size:.66rem;font-weight:800;vertical-align:middle;
+  margin-right:2px;
+}
+.altlabel.sublabel{background:#7A8794;}
+
+.num-pin.alt{
+  background:#fff;border:2.5px solid;
 }
 .stop .bd{flex:1 1 auto;min-width:0;}
 .stop .tm{font-size:.76rem;font-weight:800;color:var(--accent);}
