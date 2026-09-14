@@ -63,9 +63,10 @@ var DATA = {
       { t:"15:00", name:"헬싱키(HEL) 도착", lat:60.317945, lng:24.949624, cat:"이동", note:"Schengen 역내 이동, 입국심사 없음" },
       { t:"17:30", name:"숙소 체크인 (Korkeavuorenkatu 3)", lat:60.160012, lng:24.947378, cat:"이동", move:"🚆 공항열차 I/P → 중앙역 30분 (ABC권 €4.80) → 🚋 트램 10번 또는 도보 18분" },
       { t:"18:15", name:"Esplanadi 공원 · Kauppatori 항구 산책", lat:60.167665, lng:24.953678, cat:"관광", move:"도보 11분", note:"월요일 저녁은 실내 대부분 18시 마감 · 야외 산책로는 상시 개방 · 좌판은 이미 정리됨" },
-      { t:"19:00", name:"저녁 — Kappeli", lat:60.167386, lng:24.950323, cat:"식사", move:"도보 4분", note:"1867년부터 · 온실 건물 · 엘크스테이크" },
-      { alt:true, t:"", name:"Allas Sea Pool", lat:60.167100, lng:24.957162, cat:"휴식", note:"월~금 ~21:00 · 바다 사우나, 수영복 대여 가능" },
-      { alt:true, t:"", name:"Café Aalto", lat:60.168106, lng:24.943655, cat:"카페", note:"월요일 ~20:00 · Alvar Aalto 설계 서점 2층" }
+      { t:"19:00", name:"저녁 — Restaurant Sea Horse", lat:60.158666, lng:24.946446, cat:"식사", move:"도보 14분 (숙소에서는 도보 3분)", note:"월요일 12:00~22:00 · 1934년부터 · 미트볼·청어·연어수프 · Kappeli보다 저렴하고 현지인 많음 · 예약 권장" },
+      { alt:true, t:"", name:"Restaurant Zetor", lat:60.169377, lng:24.940802, cat:"식사", note:"월요일 15:00~23:30 · 트랙터 테마 · 순록요리 · 관광객 많고 가격대 높은 편" },
+      { alt:true, t:"", name:"Kappeli", lat:60.167386, lng:24.950323, cat:"식사", note:"1867년 온실 건물 · 분위기는 최고지만 가격대 높음" },
+      { alt:true, t:"", name:"Allas Sea Pool", lat:60.167100, lng:24.957162, cat:"휴식", note:"월~금 ~21:00 · 바다 사우나, 수영복 대여 가능" }
     ]},
     { id:6, color:"#1F5AA8", theme:"헬싱키", date:"9/15 (화)", iso:"2026-09-15", stops:[
       { t:"10:00", name:"Oodi 도서관", lat:60.173683, lng:24.937919, cat:"관광", move:"🚋 트램 10분 (AB권 €3.20) 또는 도보 22분", note:"화요일 8:00~21:00 · 무료 입장" },
@@ -139,6 +140,9 @@ var DATA = {
     { n:"Fazer Café", c:"카페", lat:60.1686468, lng:24.9476736, r:4.4, h:"매일 7:30~22:00 (일 10-20)", m:"파제르 초콜릿 본점 카페" },
     { n:"Restaurant Story", c:"식사", lat:60.1661689, lng:24.9528382, r:4.2, h:"매일 8:00~17:00", m:"미트볼·순록 요리 · 올드마켓홀 근처" },
     { n:"Kappeli", c:"식사", lat:60.1673860, lng:24.9503230, r:4.4, h:"매일 10:00~23/24:00", m:"1867년부터 · 온실 건물 · 엘크스테이크" },
+    { n:"Restaurant Sea Horse", c:"식사", lat:60.158666, lng:24.946446, r:4.4, h:"월~화 12:00~22:00, 수~금 ~23:00, 토 15-23, 일 15-22", m:"1934년부터 · 미트볼·청어·연어수프 · 숙소 도보 3분 · 예약 권장" },
+    { n:"Restaurant Zetor", c:"식사", lat:60.169377, lng:24.940802, r:4.2, h:"월·화·목 15:00~23:30, 수 ~02:00, 금·토 ~04:30, 일 13-23:30", m:"트랙터 테마 · 순록스테이크·연어수프 · 관광객 많음" },
+    { n:"Konstan Möljä", c:"식사", lat:60.163985, lng:24.926793, r:4.5, h:"화~금 11-14:30/17-22, 토 16-23, 일·월 휴무", m:"전통 핀란드 뷔페 · 정액제 · 월요일 휴무 주의" },
     { n:"Allas Sea Pool", c:"휴식", lat:60.167100, lng:24.957162, r:4.2, h:"월~금 6:30~21:00, 토·일 8:00~21:00", m:"바다 사우나+수영장 · 마켓광장 바로 옆" },
     { n:"Hakaniemi Market Hall", c:"식사", lat:60.180098, lng:24.951342, r:4.3, h:"월~토 8:00~18:00, 일 휴무", m:"연어수프 · 현지인 많고 관광지스럽지 않음" },
     { n:"Restaurant BLINIt", c:"식사", lat:60.187901, lng:24.945057, r:4.5, h:"매일 12:00~22:00", m:"블리니·보르시·펠메니 · Kallio 지역" },
@@ -210,6 +214,20 @@ function $(id){ return document.getElementById(id); }
 function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function gmaps(lat,lng){
   return "https://www.google.com/maps/dir/?api=1&destination="+lat+","+lng+"&travelmode=walking";
+}
+/* 장소 이름 → 구글맵 정보 페이지 (영업시간·리뷰·사진) */
+function gplace(name, lat, lng){
+  var raw = String(name||"");
+  /* 출발·도착·체크인 같은 동작 행은 이름 검색이 무의미 → 좌표로 열기 */
+  if (/출발|도착|체크인|체크아웃|픽업|복귀|탑승|짐 |짐정리|짐 정리|준비|휴식|보관|장보기/.test(raw)){
+    return "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
+  }
+  var q = raw.split("—").pop()
+            .replace(/\(.*?\)/g, "")
+            .replace(/[⭐⏰⚠️]/g, "").trim();
+  if (lat > 64.10 && lat < 64.20 && lng > -22.10 && lng < -21.80) q += " Reykjavík";
+  else if (lat > 60.10 && lat < 60.35 && lng > 24.80 && lng < 25.05) q += " Helsinki";
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
 }
 function dayById(id){ return DAYS.filter(function(d){ return d.id===id; })[0]; }
 
@@ -288,7 +306,7 @@ function stopHTML(s, i, day, label){
                (s.alt ? "<span class='altlabel sublabel'>대안</span> " : "") +
                esc(s.alt ? s.cat : s.t + " · " + s.cat) +
              "</div>" +
-             "<div class='nm'>" + esc(s.name) + "</div>" +
+             "<div class='nm'><a class='nmlink' href='" + gplace(s.name,s.lat,s.lng) + "' target='_blank' rel='noopener'>" + esc(s.name) + "</a></div>" +
              (s.note ? "<div class='nt'>" + esc(s.note) + "</div>" : "") +
              "<a class='go' href='" + gmaps(s.lat,s.lng) + "' target='_blank' rel='noopener'>길찾기</a>" +
            "</div></div>";
@@ -352,7 +370,7 @@ function renderFoodList(){
     var col = FOOD_COLOR[f.c] || "#666";
     h += "<div class='fcard'><div class='r1'>" +
            "<span class='cat' style='background:" + col + "'>" + esc(f.c) + "</span>" +
-           "<span class='nm'>" + esc(f.n) + "</span>" +
+           "<a class='nm nmlink' href='" + gplace(f.n,f.lat,f.lng) + "' target='_blank' rel='noopener'>" + esc(f.n) + "</a>" +
            (f.r ? "<span class='rt'>★ " + f.r + "</span>" : "") +
          "</div>" +
          (f.h ? "<div class='hr'>🕘 " + esc(f.h) + "</div>" : "") +
@@ -486,7 +504,7 @@ function drawDay(fit){
         iconSize:[30,30], iconAnchor:[15,28], popupAnchor:[0,-26] })
     }).bindPopup(
       "<div class='pp-c' style='color:"+col+"'>"+(s.alt ? "대안 · " : esc(s.t)+" · ")+esc(s.cat)+"</div>"+
-      "<div class='pp-n'>"+LB[i]+". "+esc(s.name)+"</div>"+
+      "<div class='pp-n'><a class='nmlink' href='"+gplace(s.name,s.lat,s.lng)+"' target='_blank' rel='noopener'>"+LB[i]+". "+esc(s.name)+"</a></div>"+
       (s.note ? "<div class='pp-t'>"+esc(s.note)+"</div>" : "")+
       "<a class='pp-l' href='"+gmaps(s.lat,s.lng)+"' target='_blank' rel='noopener'>📍 길찾기</a>"
     ).addTo(dayLayer);
@@ -524,7 +542,7 @@ function renderSheetList(d){
   el.innerHTML = h;
   Array.prototype.forEach.call(el.querySelectorAll('.stop'), function(row){
     row.addEventListener('click', function(e){
-      if (e.target && e.target.classList.contains('go')) return;
+      if (e.target && (e.target.classList.contains('go') || e.target.classList.contains('nmlink'))) return;
       selectStop(parseInt(row.dataset.i,10), true);
     });
   });
@@ -558,7 +576,7 @@ function drawFood(){
       color:"#fff", fillColor:col, fillOpacity:1
     }).bindPopup(
       "<div class='pp-c' style='color:"+col+"'>"+esc(f.c)+(f.r?" · ★"+f.r:"")+"</div>"+
-      "<div class='pp-n'>"+esc(f.n)+"</div>"+
+      "<div class='pp-n'><a class='nmlink' href='"+gplace(f.n,f.lat,f.lng)+"' target='_blank' rel='noopener'>"+esc(f.n)+"</a></div>"+
       (f.h ? "<div class='pp-t'>🕘 "+esc(f.h)+"</div>" : "")+
       (f.m ? "<div class='pp-t'>"+esc(f.m)+"</div>" : "")+
       "<a class='pp-l' href='"+gmaps(f.lat,f.lng)+"' target='_blank' rel='noopener'>📍 길찾기</a>"
