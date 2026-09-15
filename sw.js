@@ -3,7 +3,7 @@
    · 지도 타일: 캐시 우선 + 백그라운드 저장, 최대 개수 제한
    업데이트할 때는 VERSION 숫자만 올리면 됩니다.
 */
-var VERSION   = 'v1';
+var VERSION   = 'v2';
 var SHELL     = 'if26-shell-' + VERSION;
 var TILES     = 'if26-tiles-' + VERSION;
 var TILE_MAX  = 1800;   // 타일 캐시 상한 (3개 구역, 남부해안은 저해상도)
