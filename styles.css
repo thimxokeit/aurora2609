@@ -108,7 +108,9 @@ header{
 .leaflet-popup-content{margin:11px 13px;font-size:.9rem;}
 .leaflet-popup-content-wrapper{border-radius:12px;}
 .pp-c{font-size:.78rem;font-weight:800;}
-.pp-n{font-size:1rem;font-weight:800;margin:2px 0 4px;}
+.pp-n{font-size:1rem;font-weight:800;margin:2px 0 2px;}
+/* 팝업: 계획 이름(실제 장소명 아래 보조 표기) */
+.pp-p{font-size:.8rem;color:var(--gray);margin:0 0 4px;line-height:1.35;}
 .pp-t{font-size:.85rem;color:var(--gray);line-height:1.45;}
 .pp-l{display:inline-flex;align-items:center;min-height:40px;margin-top:6px;
       font-size:.85rem;font-weight:700;color:var(--navy);text-decoration:none;}
@@ -186,6 +188,9 @@ header{
 .stop .tm{font-size:.76rem;font-weight:800;color:var(--accent);}
 .stop .nm{font-size:.97rem;font-weight:700;margin:1px 0 2px;word-break:keep-all;}
 .stop .nt{font-size:.83rem;color:var(--gray);word-break:keep-all;}
+/* 일정 리스트: 실제 장소명 */
+.stop .pl{font-size:.82rem;font-weight:600;color:var(--gray);margin:0 0 2px;word-break:keep-all;}
+.stop .pl::before{content:'📍 ';}
 .stop.sel{background:#FFF4F1;border-radius:10px;}
 
 #sheet .stop{padding:9px 8px;}
