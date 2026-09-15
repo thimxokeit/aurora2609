@@ -81,8 +81,8 @@ var DATA = {
       { t:"14:00", name:"Kiasma 컨템포러리 아트뮤지엄", lat:60.171591, lng:24.936864, cat:"관광", move:"도보 6분", note:"화요일 10:00~20:00 · 월요일 휴관" },
       { t:"15:00", name:"Design District 쇼핑", lat:60.160609, lng:24.946688, cat:"쇼핑", move:"🚋 트램 10분 또는 도보 18분", note:"⏰매장 대부분 ~18시 마감이라 먼저 · 선물은 이따 귀가길에" },
       { t:"16:00", name:"Esplanadi 공원 · Kauppatori 항구 산책", lat:60.167665, lng:24.953678, cat:"관광", move:"도보 12분", note:"Day5에 못 갔던 곳 · 야외라 상시 개방 무료" },
-      { t:"17:00", name:"Kallio 교회 · 동네 산책", lat:60.184324, lng:24.949357, cat:"관광", move:"🚋 트램 약 15분", note:"언덕 위 랜드마크 · 헬싱키 전망" },
-      { t:"18:30", name:"Moomin Shop Forum · S-market에서 선물 쇼핑", lat:60.169307, lng:24.938046, cat:"쇼핑", move:"🚋 귀가하는 트램에서 Forum 정류장 하차 (약 15분)", note:"귀가길에 들르는 순서라 산 걸 오래 안 들고 다녀도 됨 · Moomin Shop: 머그컵·에코백 · S-market(24시간): 자일리톨 껌·치약, Fazer 초콜릿, 살미아키 민트 — 팀 선물용" },
+      { t:"18:30", name:"Moomin Shop Forum · S-market에서 선물 쇼핑", lat:60.169307, lng:24.938046, cat:"쇼핑", move:"🚋 귀가하는 트램에서 Forum 정류장 하차 (약 15분)", note:"Moomin Shop: 머그컵·에코백 · S-market(24시간): 자일리톨 껌·치약, Fazer 초콜릿, 살미아키 민트 — 팀 선물용" },
+      { t:"18:30", name:"Kallio 교회 · 동네 산책", lat:60.184324, lng:24.949357, cat:"관광", move:"🚋 트램 약 15분", note:"언덕 위 랜드마크 · 헬싱키 전망" },
       { t:"19:00", name:"숙소 복귀 · 저녁은 집에서", lat:60.160012, lng:24.947378, cat:"식사", move:"도보 15분 또는 🚋 트램 5분", note:"필요하면 Alepa Ullanlinna(도보 3분, ~23시)에서 장보기" },
       { alt:true, t:"", name:"Restaurant Sea Horse", lat:60.158666, lng:24.946446, cat:"식사", note:"밥 대신 외식하고 싶다면 · 숙소 도보 3분 · 화요일 12:00~22:00" },
       { alt:true, t:"", name:"Restaurant BLINIt", lat:60.187901, lng:24.945057, cat:"식사", note:"Kallio에서 외식했다면 · 도보 8분 · 매일 12:00~22:00 · 블리니·보르시" }
