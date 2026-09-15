@@ -9,146 +9,146 @@
 var DATA = {
   days: [
     { id:1, color:"#173355", theme:"레이캬비크 도착", date:"9/10 (목)", iso:"2026-09-10", stops:[
-      { t:"07:50", name:"케플라비크(KEF) 공항 도착", lat:63.981487, lng:-22.628186, cat:"이동" },
-      { t:"08:10", name:"Flybus 탑승 → BSÍ 버스터미널", lat:64.1372475, lng:-21.9349827, cat:"이동", note:"약 45분 소요" },
-      { t:"09:15", name:"Luggage Lockers (Barónsstígur 47)에 짐 보관", lat:64.140915, lng:-21.922323, cat:"이동", note:"24시간 운영 · BSÍ보다 숙소 방향에 가까운 코인락커" },
-      { t:"09:45", name:"Planta Kaffihús에서 아점", lat:64.142538, lng:-21.920516, cat:"카페", note:"화~일 8:00~17:00(월 휴무) · 비건 카페, 치즈번·커피 좋음" },
-      { t:"11:00", name:"Hallgrímskirkja 구경", lat:64.1420229, lng:-21.9265494, cat:"관광", note:"매일 10:00~17:00" },
-      { t:"11:45", name:"레인보우 거리(Skólavörðustígur)에서 기념품 구경", lat:64.144495, lng:-21.930386, cat:"쇼핑", note:"무지개 거리 · 상점·카페 밀집" },
-      { t:"12:30", name:"Laugavegur 거리 구경 (Hard Rock Cafe, H&M 등) → The World of Icelandic Music까지", lat:64.149909, lng:-21.932813, cat:"쇼핑", note:"관람은 안 하고 비 피하며 구경만 함 · Hard Rock Cafe, H&M 매장 구경" },
-      { t:"13:30", name:"Bernhöftsbakarí에서 빵 구매 (도넛, 치즈번)", lat:64.147926, lng:-21.926752, cat:"빵집", note:"목요일 7:30~17:00 · 레이캬비크에서 가장 오래된 베이커리" },
-      { t:"14:00", name:"Vínbúðin에서 맥주·와인 구매", lat:64.147678, lng:-21.939615, cat:"쇼핑", note:"목요일 11:00~18:00, 일요일 휴무 · 아이슬란드는 국영주류점에서만 도수 있는 맥주 판매" },
-      { t:"14:20", name:"SPAR (Barónsstígur)에서 장보기", lat:64.144547, lng:-21.918583, cat:"쇼핑", note:"24시간 운영" },
+      { t:"07:50", name:"케플라비크(KEF) 공항 도착", g:"Keflavík International Airport", gid:"ChIJn3mr4vz9KUkRzSjDFQqN-Cc", lat:63.981487, lng:-22.628186, cat:"이동" },
+      { t:"08:10", name:"Flybus 탑승 → BSÍ 버스터미널", g:"Reykjavík BSÍ Bus Terminal", gid:"ChIJzaRTATUL1kgRx0ZGweJzM8M", lat:64.1372475, lng:-21.9349827, cat:"이동", note:"약 45분 소요" },
+      { t:"09:15", name:"Luggage Lockers (Barónsstígur 47)에 짐 보관", g:"Luggage Lockers, Barónsstígur 47", gid:"ChIJuUs-2wl11kgRcdA6KHDT5hc", lat:64.140915, lng:-21.922323, cat:"이동", note:"24시간 운영 · BSÍ보다 숙소 방향에 가까운 코인락커" },
+      { t:"09:45", name:"Planta Kaffihús에서 아점", g:"Plantan Kaffihús", gid:"ChIJB-nzHeZ11kgRWs9x73hmTqY", lat:64.142538, lng:-21.920516, cat:"카페", note:"화~일 8:00~17:00(월 휴무) · 비건 카페, 치즈번·커피 좋음" },
+      { t:"11:00", name:"Hallgrímskirkja 구경", g:"Hallgrímskirkja", gid:"ChIJtS1DoMx01kgR76qdSMQor_c", lat:64.1420229, lng:-21.9265494, cat:"관광", note:"매일 10:00~17:00" },
+      { t:"11:45", name:"레인보우 거리(Skólavörðustígur)에서 기념품 구경", g:"Skólavörðustígur", gid:"ChIJ1_VeJs101kgRLa9_D5_pTuA", lat:64.144495, lng:-21.930386, cat:"쇼핑", note:"무지개 거리 · 상점·카페 밀집" },
+      { t:"12:30", name:"Laugavegur 거리 구경 (Hard Rock Cafe, H&M 등) → The World of Icelandic Music까지", g:"The World of Icelandic Music", gid:"ChIJS4HNSAd11kgROs4oCSbmk9s", lat:64.149909, lng:-21.932813, cat:"쇼핑", note:"관람은 안 하고 비 피하며 구경만 함 · Hard Rock Cafe, H&M 매장 구경" },
+      { t:"13:30", name:"Bernhöftsbakarí에서 빵 구매 (도넛, 치즈번)", g:"Bernhöftsbakarí", gid:"ChIJcxFiDc101kgRGmvIpFbu0_Q", lat:64.147926, lng:-21.926752, cat:"빵집", note:"목요일 7:30~17:00 · 레이캬비크에서 가장 오래된 베이커리" },
+      { t:"14:00", name:"Vínbúðin에서 맥주·와인 구매", g:"Vínbúðin Austurstræti 10a", gid:"ChIJd-zbFC0L1kgR53rtKtupBZs", lat:64.147678, lng:-21.939615, cat:"쇼핑", note:"목요일 11:00~18:00, 일요일 휴무 · 아이슬란드는 국영주류점에서만 도수 있는 맥주 판매" },
+      { t:"14:20", name:"SPAR (Barónsstígur)에서 장보기", g:"SPAR Barónsstígur", gid:"ChIJGfprfAB11kgRxhw09KEtcns", lat:64.144547, lng:-21.918583, cat:"쇼핑", note:"24시간 운영" },
       { t:"15:00", name:"숙소 체크인 (Rauðarárstígur 7)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"Luggage Lockers에서 짐 찾아서 이동" },
-      { t:"16:00", name:"Sundhöll Reykjavíkur — 수영장·온탕·사우나", lat:64.141829, lng:-21.920652, cat:"휴식", note:"목요일 15:00~22:00 · Hallgrímskirkja와 같은 건축가(Guðjón Samúelsson) 작품 · 성인 1,380 ISK · 수영복 대여 가능 · 탕 들어가기 전 알몸 샤워는 필수(성별 분리)" },
+      { t:"16:00", name:"Sundhöll Reykjavíkur — 수영장·온탕·사우나", g:"Sundhöll Reykjavíkur (Sundhöllin)", gid:"ChIJ273ekst01kgRqtzWxzEWjYU", lat:64.141829, lng:-21.920652, cat:"휴식", note:"목요일 15:00~22:00 · Hallgrímskirkja와 같은 건축가(Guðjón Samúelsson) 작품 · 성인 1,380 ISK · 수영복 대여 가능 · 탕 들어가기 전 알몸 샤워는 필수(성별 분리)" },
       { t:"19:30", name:"숙소에서 휴식 (오로라 투어 취소됨)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"악천후로 취소 · 무료 재예약 진행 → Day4로 이동" },
       { alt:true, t:"", name:"Café Loki", lat:64.142403, lng:-21.928852, cat:"식사", note:"쉬지 않았다면 · Lokastígur 28, 도보 5분, ~22시 · 램수프·호밀빵 아이스크림" },
       { alt:true, t:"", name:"Skúli Craft Bar", lat:64.147554, lng:-21.941615, cat:"나이트라이프", note:"쉬지 않았다면 · Aðalstræti 9, ~23시 · 아이슬란드 크래프트 맥주" }
     ]},
     { id:2, color:"#2A6F8E", theme:"빙하투어 (남부해안)", date:"9/11 (금)", iso:"2026-09-11", stops:[
       { t:"07:00", name:"투어 출발 (숙소 인근 픽업)", lat:64.1437875, lng:-21.9126406, cat:"이동", note:"정확한 픽업시간은 바우처로 재확인" },
-      { t:"08:45", name:"Hvolsvöllur — 휴식 15분", lat:63.751113, lng:-20.222920, cat:"이동", note:"버스·코치 105분 이동 후 휴게" },
-      { t:"09:20~09:50", name:"Seljalandsfoss — 사진촬영 30분", lat:63.615623, lng:-19.988569, cat:"관광", note:"실제 방문 시간 · 폭포 뒤로 걸어들어갈 수 있음 · 우비 필요" },
-      { t:"11:30~12:00", name:"Kirkjubæjarklaustur — Stjórnarfoss 구경 & 점심", lat:63.789024, lng:-18.053116, cat:"식사", note:"Stjórnarfoss(주차장에서 도보 5분 이내) 구경 겸 점심" },
-      { t:"13:30~15:00", name:"Jökulsárlón 빙하라군 & Diamond Beach", lat:64.078446, lng:-16.230554, cat:"관광", note:"실제 방문 시간 · 유빙·물범 관찰 · 보트크루즈 옵션(추가요금)" },
+      { t:"08:45", name:"Hvolsvöllur — 휴식 15분", g:"Hvolsvöllur", gid:"ChIJ_8nq4HTj1kgRRR6_--VrIt4", lat:63.751113, lng:-20.222920, cat:"이동", note:"버스·코치 105분 이동 후 휴게" },
+      { t:"09:20~09:50", name:"Seljalandsfoss — 사진촬영 30분", g:"Seljalandsfoss", gid:"ChIJFSTv6K0e10gRjRcJUiDmAa4", lat:63.615623, lng:-19.988569, cat:"관광", note:"실제 방문 시간 · 폭포 뒤로 걸어들어갈 수 있음 · 우비 필요" },
+      { t:"11:30~12:00", name:"Kirkjubæjarklaustur — Stjórnarfoss 구경 & 점심", g:"Kirkjubæjarklaustur", gid:"ChIJSU4NkEjl0EgR8v5S5pyjeKA", lat:63.789024, lng:-18.053116, cat:"식사", note:"Stjórnarfoss(주차장에서 도보 5분 이내) 구경 겸 점심" },
+      { t:"13:30~15:00", name:"Jökulsárlón 빙하라군 & Diamond Beach", g:"Jökulsárlón", gid:"ChIJGTg61-zWz0gRqUYB4VnJBc0", lat:64.078446, lng:-16.230554, cat:"관광", note:"실제 방문 시간 · 유빙·물범 관찰 · 보트크루즈 옵션(추가요금)" },
       { t:"15:55~16:05", name:"Skeiðará Bridge Monument", lat:63.984627, lng:-16.959378, cat:"관광", note:"돌아오는 길에 방문 · 1996년 빙하 홍수로 휘어진 다리 잔해, 짧은 포토스톱" },
-      { t:"17:40~18:15", name:"Vík í Mýrdal — 저녁", lat:63.417650, lng:-18.997440, cat:"식사", note:"18:15 실제 출발 확인됨 · 도착시간은 추정" },
-      { t:"20:30", name:"투어 종료, Bus Stop 12 Höfðatorg 하차", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"실제 도착 시간 · 숙소까지 도보 2분" }
+      { t:"17:40~18:15", name:"Vík í Mýrdal — 저녁", g:"Vík í Mýrdal", gid:"ChIJ0bA2SUJK10gRjXdtABtTg74", lat:63.417650, lng:-18.997440, cat:"식사", note:"18:15 실제 출발 확인됨 · 도착시간은 추정" },
+      { t:"20:30", name:"투어 종료, Bus Stop 12 Höfðatorg 하차", g:"Bus Stop #12 Höfðatorg", gid:"ChIJw-ocGCF11kgRLpQIJwLEZZg", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"실제 도착 시간 · 숙소까지 도보 2분" }
     ]},
     { id:3, color:"#4B3F91", theme:"자유시간 · 오로라#2", date:"9/12 (토)", iso:"2026-09-12", stops:[
-      { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús", lat:64.149139, lng:-21.940938, cat:"관광", move:"⭐Kjarvalsstaðir에서 시티 카드 수령 (숙소서 도보 9분) → 🚌 버스로 이동 (카드로 무료)", note:"24시간권이면 내일 13:00쯤까지 · 입장료 2,550 ISK 카드로 무료 · 매일 10-17(목~22) · Erró 상설전" },
-      { t:"14:30", name:"Kolaportið 벼룩시장", lat:64.148933, lng:-21.938775, cat:"쇼핑", move:"바로 옆 건물, 도보 1분", note:"토·일 11:00~17:00만 운영 · 입장 무료" },
+      { t:"13:20", name:"Reykjavík Art Museum — Hafnarhús", g:"Reykjavík Art Museum – Hafnarhús", gid:"ChIJNV3Fe7901kgRJLUPv8oYN2k", lat:64.149139, lng:-21.940938, cat:"관광", move:"⭐Kjarvalsstaðir에서 시티 카드 수령 (숙소서 도보 9분) → 🚌 버스로 이동 (카드로 무료)", note:"24시간권이면 내일 13:00쯤까지 · 입장료 2,550 ISK 카드로 무료 · 매일 10-17(목~22) · Erró 상설전" },
+      { t:"14:30", name:"Kolaportið 벼룩시장", g:"Kolaportið Market", gid:"ChIJw-3c7rl01kgRxaYZSZCbjjk", lat:64.148933, lng:-21.938775, cat:"쇼핑", move:"바로 옆 건물, 도보 1분", note:"토·일 11:00~17:00만 운영 · 입장 무료" },
       { t:"15:30", name:"Old Harbour HOT DOGS", lat:64.151190, lng:-21.944257, cat:"간식", move:"도보 6분", note:"매일 11:00~20:00 · 핫도그·맥주" },
-      { t:"16:15", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두)" },
+      { t:"16:15", name:"Marshall House — Kling & Bang · Living Art Museum(Nýlistasafnið)", g:"The Marshall House", gid:"ChIJD9BsD9V01kgR1RvPvsd7h14", lat:64.156255, lng:-21.939150, cat:"관광", move:"도보 12분 → 🚌 버스 (시티카드 무료)", note:"토요일 12:00~18:00 · 입장 무료(3개 갤러리 모두)" },
       { t:"18:30", name:"Sólfarið (Sun Voyager)", lat:64.147631, lng:-21.922285, cat:"관광", move:"🚌 버스 (시티카드 무료)", note:"24시간 무료 · 바이킹 배 형상 조각" },
-      { t:"18:50", name:"Höfði 하우스", lat:64.151667, lng:-21.909167, cat:"관광", move:"Sæbraut 해안길 따라 도보 9분", note:"1986년 레이건-고르바초프 정상회담 장소 · 외관만 관람, 무료" },
+      { t:"18:50", name:"Höfði 하우스", g:"Höfði House", gid:"ChIJ7Ybm7MV01kgR74DMI4hjl_E", lat:64.1465149, lng:-21.9063612, cat:"관광", move:"Sæbraut 해안길 따라 도보 9분", note:"1986년 레이건-고르바초프 정상회담 장소 · 외관만 관람, 무료" },
       { t:"19:20", name:"숙소 복귀, 저녁은 집에서", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"도보 8분" },
-      { t:"20:30", name:"오로라 투어 픽업 장소로 이동", lat:64.1443797, lng:-21.9104986, cat:"이동", move:"도보 2분", note:"Bus Stop 12 Höfðatorg" },
+      { t:"20:30", name:"오로라 투어 픽업 장소로 이동", g:"Bus Stop #12 Höfðatorg", gid:"ChIJw-ocGCF11kgRLpQIJwLEZZg", lat:64.1443797, lng:-21.9104986, cat:"이동", move:"도보 2분", note:"Bus Stop 12 Höfðatorg" },
       { t:"21:00~02:00", name:"오로라 투어 #2", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"Northern Lights Guided Tour" }
     ]},
     { id:4, color:"#26617F", theme:"자유시간 · 오로라 재도전", date:"9/13 (일)", iso:"2026-09-13", stops:[
       { t:"11:30", name:"National Museum of Iceland", lat:64.141615, lng:-21.948578, cat:"관광", move:"아침은 집에서 · 🚌 버스 (시티카드 무료)", note:"⏰13:00 Ásmundarsafn 개장 맞추려면 12:35 출발 → 약 1시간만 관람 가능 · 입장료 약 2,500 ISK 카드 커버" },
       { t:"13:00", name:"Ásmundarsafn (개장과 동시에 입장)", lat:64.141631, lng:-21.885167, cat:"관광", move:"🚌 버스 약 20분 (시티카드 무료 — 13:30 만료 직전)", note:"매일 13:00~17:00 · 입장료 카드 커버 · 조각가 Ásmundur Sveinsson 미술관 · 야외 조각정원은 티켓 없이도 무료" },
-      { t:"14:30", name:"Braud & Co (Laugavegur 180)에서 빵 구매", lat:64.140238, lng:-21.895288, cat:"빵집", move:"도보 7분 (돌아오는 길)", note:"⚠️ 일요일 15:00 마감 — Ásmundarsafn에서 14:15엔 나오기 · 내일 비행기용" },
-      { t:"15:00", name:"Reykjavík Roasters (Brautarholt 2)", lat:64.141668, lng:-21.911438, cat:"카페", move:"도보 10분", note:"일요일 7:00~17:00 · Kárastígur 본점보다 좌석 많고 작업하기 좋음" },
+      { t:"14:30", name:"Braud & Co (Laugavegur 180)에서 빵 구매", g:"Brauð & Co Laugavegur 180", gid:"ChIJmQRN7ht11kgR-I7v5mwE94g", lat:64.140238, lng:-21.895288, cat:"빵집", move:"도보 7분 (돌아오는 길)", note:"⚠️ 일요일 15:00 마감 — Ásmundarsafn에서 14:15엔 나오기 · 내일 비행기용" },
+      { t:"15:00", name:"Reykjavík Roasters (Brautarholt 2)", g:"Reykjavík Roasters Brautarholt 2", lat:64.141668, lng:-21.911438, cat:"카페", move:"도보 10분", note:"일요일 7:00~17:00 · Kárastígur 본점보다 좌석 많고 작업하기 좋음" },
       { t:"16:00", name:"숙소에서 짐 정리", lat:64.1437875, lng:-21.9126406, cat:"이동", move:"도보 4분", note:"04:00 Flybus까지 그대로 들고 나갈 상태로" },
       { t:"19:00", name:"숙소에서 저녁", lat:64.1437875, lng:-21.9126406, cat:"식사", note:"SPAR에서 산 재료로 간단히" },
       { t:"21:30~약02:00", name:"오로라 투어 (Day1 취소분 재예약)", lat:64.1437875, lng:-21.9126406, cat:"오로라", note:"⚠️ 투어 종료~04:00 Flybus 픽업까지 휴식시간이 약 2시간뿐" },
-      { t:"04:00(+1)", name:"Flybus 픽업 (다음날 새벽)", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"바로 이어지는 일정이니 투어 중에도 시간 체크" }
+      { t:"04:00(+1)", name:"Flybus 픽업 (다음날 새벽)", g:"Bus Stop #12 Höfðatorg", gid:"ChIJw-ocGCF11kgRLpQIJwLEZZg", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"바로 이어지는 일정이니 투어 중에도 시간 체크" }
     ]},
     { id:5, color:"#7A4E97", theme:"아이슬란드 → 헬싱키", date:"9/14 (월)", iso:"2026-09-14", stops:[
-      { t:"04:00", name:"Flybus 숙소 픽업 (Bus Stop 12 Höfðatorg)", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"픽업 시작 04:00 · 출발 04:30 (예약 확정 IF-U9XYWG)" },
-      { t:"04:45", name:"케플라비크(KEF) 공항 도착", lat:63.981487, lng:-22.628186, cat:"이동", note:"45분 소요 · 08:35 출발까지 여유 있음" },
-      { t:"08:35", name:"KEF 출발 (AY0992)", lat:63.981487, lng:-22.628186, cat:"이동" },
-      { t:"15:00", name:"헬싱키(HEL) 도착", lat:60.317945, lng:24.949624, cat:"이동", note:"Schengen 역내 이동, 입국심사 없음" },
+      { t:"04:00", name:"Flybus 숙소 픽업 (Bus Stop 12 Höfðatorg)", g:"Bus Stop #12 Höfðatorg", gid:"ChIJw-ocGCF11kgRLpQIJwLEZZg", lat:64.1443797, lng:-21.9104986, cat:"이동", note:"픽업 시작 04:00 · 출발 04:30 (예약 확정 IF-U9XYWG)" },
+      { t:"04:45", name:"케플라비크(KEF) 공항 도착", g:"Keflavík International Airport", gid:"ChIJn3mr4vz9KUkRzSjDFQqN-Cc", lat:63.981487, lng:-22.628186, cat:"이동", note:"45분 소요 · 08:35 출발까지 여유 있음" },
+      { t:"08:35", name:"KEF 출발 (AY0992)", g:"Keflavík International Airport", gid:"ChIJn3mr4vz9KUkRzSjDFQqN-Cc", lat:63.981487, lng:-22.628186, cat:"이동" },
+      { t:"15:00", name:"헬싱키(HEL) 도착", g:"Helsinki Airport", gid:"ChIJsaJij2X4jUYRlrMoLAHZ8Ps", lat:60.317945, lng:24.949624, cat:"이동", note:"Schengen 역내 이동, 입국심사 없음" },
       { t:"17:30", name:"숙소 체크인 (Korkeavuorenkatu 3)", lat:60.160012, lng:24.947378, cat:"이동", move:"🚆 공항열차 I/P → 중앙역 30분 (ABC권 €4.80) → 🚋 트램 10번 또는 도보 18분" },
-      { t:"18:15", name:"Esplanadi 공원 · Kauppatori 항구 산책", lat:60.167665, lng:24.953678, cat:"관광", move:"도보 11분", note:"월요일 저녁은 실내 대부분 18시 마감 · 야외 산책로는 상시 개방 · 좌판은 이미 정리됨" },
-      { t:"19:15", name:"Alepa Ullanlinna에서 장보기", lat:60.159399, lng:24.945639, cat:"쇼핑", move:"도보 13분 (귀가 방향)", note:"매일 6:30~23:00 · 숙소서 도보 3분 · 5.5% 이하 맥주·롱드링크는 21시까지만 판매" },
+      { t:"18:15", name:"Esplanadi 공원 · Kauppatori 항구 산책", g:"Esplanadi", gid:"ChIJn65pyM4LkkYRMLoVPFK1AA8", lat:60.167665, lng:24.953678, cat:"관광", move:"도보 11분", note:"월요일 저녁은 실내 대부분 18시 마감 · 야외 산책로는 상시 개방 · 좌판은 이미 정리됨" },
+      { t:"19:15", name:"Alepa Ullanlinna에서 장보기", g:"Alepa Ullanlinna", lat:60.159399, lng:24.945639, cat:"쇼핑", move:"도보 13분 (귀가 방향)", note:"매일 6:30~23:00 · 숙소서 도보 3분 · 5.5% 이하 맥주·롱드링크는 21시까지만 판매" },
       { t:"19:45", name:"숙소에서 저녁", lat:60.160012, lng:24.947378, cat:"식사", move:"도보 3분" },
       { alt:true, t:"", name:"Restaurant Sea Horse", lat:60.158666, lng:24.946446, cat:"식사", note:"외식했다면 · 숙소 도보 3분 · 월~화 12:00~22:00 · 1934년부터, 미트볼·청어·연어수프" },
       { alt:true, t:"", name:"Allas Sea Pool", lat:60.167100, lng:24.957162, cat:"휴식", note:"월~금 ~21:00 · 바다 사우나, 수영복 대여 가능" }
     ]},
     { id:6, color:"#1F5AA8", theme:"헬싱키 도보 투어 코스", date:"9/15 (화)", iso:"2026-09-15", stops:[
-      { t:"09:30", name:"상원광장 · 헬싱키 대성당", lat:60.169479, lng:24.952287, cat:"관광", move:"숙소에서 도보 16분", note:"24시간 개방 무료 · 대성당 계단에서 광장 전망 · 내부 무료(기부금)" },
-      { t:"10:00", name:"우스펜스키 대성당", lat:60.168602, lng:24.959897, cat:"관광", move:"도보 10분", note:"화요일 9:30~16:00 · 북유럽 최대 정교회 · 언덕 위라 항구 전망 좋음" },
-      { t:"10:30", name:"마켓스퀘어에서 순록 핫도그", lat:60.167591, lng:24.951404, cat:"간식", move:"도보 8분", note:"실제로 먹은 것 · 하비스 아만다 분수도 바로 옆" },
-      { t:"11:00", name:"구시장(Old Market Hall) 구경", lat:60.166164, lng:24.952819, cat:"관광", move:"도보 3분", note:"월~토 8:00~18:00 · 1889년 목조 마켓홀" },
+      { t:"09:30", name:"상원광장 · 헬싱키 대성당", g:"Senaatintori (Senate Square)", gid:"ChIJtxnDRs4LkkYRygjZtCzjV7w", lat:60.169479, lng:24.952287, cat:"관광", move:"숙소에서 도보 16분", note:"24시간 개방 무료 · 대성당 계단에서 광장 전망 · 내부 무료(기부금)" },
+      { t:"10:00", name:"우스펜스키 대성당", g:"Uspenskin katedraali (Uspenski Cathedral)", gid:"ChIJ8Y2LJ9ILkkYRqUyx5jrKPaA", lat:60.168602, lng:24.959897, cat:"관광", move:"도보 10분", note:"화요일 9:30~16:00 · 북유럽 최대 정교회 · 언덕 위라 항구 전망 좋음" },
+      { t:"10:30", name:"마켓스퀘어에서 순록 핫도그", g:"Kauppatori (Helsinki Market Square)", gid:"ChIJs0t8Ec8LkkYR1RsRyIL4rMU", lat:60.167591, lng:24.951404, cat:"간식", move:"도보 8분", note:"실제로 먹은 것 · 하비스 아만다 분수도 바로 옆" },
+      { t:"11:00", name:"구시장(Old Market Hall) 구경", g:"Vanha kauppahalli (Old Market Hall)", gid:"ChIJWS7idIkLkkYRnDd0_KVobL4", lat:60.166164, lng:24.952819, cat:"관광", move:"도보 3분", note:"월~토 8:00~18:00 · 1889년 목조 마켓홀" },
       { t:"11:30", name:"점심 — Restaurant Story (연어수프)", lat:60.166169, lng:24.952838, cat:"식사", move:"마켓홀 안, 이동 없음", note:"화요일 8:00~17:00 · 연어수프 €16.9 · 실제로 먹는 중" },
-      { t:"12:00", name:"Esplanadi 공원 · Kauppatori 항구 산책", lat:60.167665, lng:24.953678, cat:"관광", move:"바로 옆, 도보 4분", note:"Day5에 못 갔던 곳 · 마켓홀 바로 앞이라 동선상 지금이 최적 타이밍" },
-      { t:"12:30", name:"핀란드 국립도서관", lat:60.170388, lng:24.950388, cat:"관광", move:"도보 6분", note:"오전에 못 들렀던 곳 · 화요일 9:00~18:00 · 무료 · 화려한 열람실 내부" },
-      { t:"13:00", name:"Oodi 도서관", lat:60.173683, lng:24.937919, cat:"관광", move:"도보 12분", note:"화요일 8:00~21:00 · 무료 입장" },
-      { t:"13:30", name:"Oodi 3층 카페에서 커피", lat:60.173683, lng:24.937919, cat:"카페", move:"같은 건물, 이동 없음", note:"도서관 최상층 · 시내 전망" },
-      { t:"13:50", name:"Finlandia Hall (외관)", lat:60.175699, lng:24.933609, cat:"관광", move:"도보 4분", note:"Alvar Aalto 설계, 흰 대리석 외관이 예쁨 · 앞 트램정류장에서 바로 Kallio행 탑승" },
-      { t:"14:10", name:"🚋 Kallio로 이동", lat:60.184324, lng:24.949357, cat:"이동", move:"트램 약 15분 (여기서 탭한 티켓으로 80분 이내 환승 무료)", note:"Finlandia Hall 앞 정류장에서 탑승" },
-      { t:"14:25", name:"Kallio 교회 · 골목 산책", lat:60.184324, lng:24.949357, cat:"관광", move:"짧게 둘러보고 바로 이동", note:"언덕 위 랜드마크 · 20~30분이면 충분" },
-      { t:"15:00", name:"🚋 Temppeliaukio로 이동", lat:60.173025, lng:24.925235, cat:"이동", move:"트램/버스 약 20분 (환승 필요할 수 있음, 새 티켓)", note:"80분 창 지났으니 새로 탭" },
-      { t:"15:20", name:"Temppeliaukio 암석교회", lat:60.173025, lng:24.925235, cat:"관광", move:"내부 관람", note:"수요일 9:00~17:00 · €8 · 암반을 파서 만든 교회, 음향이 뛰어나 콘서트도 열림" },
-      { t:"16:00", name:"Kiasma 컨템포러리 아트뮤지엄", lat:60.171591, lng:24.936864, cat:"관광", move:"도보 9분", note:"화요일 10:00~20:00 · 입장료 €21(할인)~23(일반) · 현재 사미족 미술전 등 3개 전시 동시 진행" },
+      { t:"12:00", name:"Esplanadi 공원 · Kauppatori 항구 산책", g:"Esplanadi", gid:"ChIJn65pyM4LkkYRMLoVPFK1AA8", lat:60.167665, lng:24.953678, cat:"관광", move:"바로 옆, 도보 4분", note:"Day5에 못 갔던 곳 · 마켓홀 바로 앞이라 동선상 지금이 최적 타이밍" },
+      { t:"12:30", name:"핀란드 국립도서관", g:"The National Library of Finland", gid:"ChIJEXjqQM4LkkYR8IvEi4stmOs", lat:60.170388, lng:24.950388, cat:"관광", move:"도보 6분", note:"오전에 못 들렀던 곳 · 화요일 9:00~18:00 · 무료 · 화려한 열람실 내부" },
+      { t:"13:00", name:"Oodi 도서관", g:"Helsinki Central Library Oodi", gid:"ChIJ67v8tsoLkkYR3XU-Jmnz2m4", lat:60.173683, lng:24.937919, cat:"관광", move:"도보 12분", note:"화요일 8:00~21:00 · 무료 입장" },
+      { t:"13:30", name:"Oodi 3층 카페에서 커피", g:"Helsinki Central Library Oodi", gid:"ChIJ67v8tsoLkkYR3XU-Jmnz2m4", lat:60.173683, lng:24.937919, cat:"카페", move:"같은 건물, 이동 없음", note:"도서관 최상층 · 시내 전망" },
+      { t:"13:50", name:"Finlandia Hall (외관)", g:"Finlandia Hall", lat:60.175699, lng:24.933609, cat:"관광", move:"도보 4분", note:"Alvar Aalto 설계, 흰 대리석 외관이 예쁨 · 앞 트램정류장에서 바로 Kallio행 탑승" },
+      { t:"14:10", name:"🚋 Kallio로 이동", g:"Kallion kirkko (Kallio Church)", gid:"ChIJ99PtqioKkkYRViO9J-HMtQU", lat:60.184324, lng:24.949357, cat:"이동", move:"트램 약 15분 (여기서 탭한 티켓으로 80분 이내 환승 무료)", note:"Finlandia Hall 앞 정류장에서 탑승" },
+      { t:"14:25", name:"Kallio 교회 · 골목 산책", g:"Kallion kirkko (Kallio Church)", gid:"ChIJ99PtqioKkkYRViO9J-HMtQU", lat:60.184324, lng:24.949357, cat:"관광", move:"짧게 둘러보고 바로 이동", note:"언덕 위 랜드마크 · 20~30분이면 충분" },
+      { t:"15:00", name:"🚋 Temppeliaukio로 이동", g:"Temppeliaukion kirkko (Rock Church)", gid:"ChIJsQw2ZzEKkkYRn0OBJ6_9uoA", lat:60.173025, lng:24.925235, cat:"이동", move:"트램/버스 약 20분 (환승 필요할 수 있음, 새 티켓)", note:"80분 창 지났으니 새로 탭" },
+      { t:"15:20", name:"Temppeliaukio 암석교회", g:"Temppeliaukion kirkko (Rock Church)", gid:"ChIJsQw2ZzEKkkYRn0OBJ6_9uoA", lat:60.173025, lng:24.925235, cat:"관광", move:"내부 관람", note:"수요일 9:00~17:00 · €8 · 암반을 파서 만든 교회, 음향이 뛰어나 콘서트도 열림" },
+      { t:"16:00", name:"Kiasma 컨템포러리 아트뮤지엄", g:"Kiasma", lat:60.171591, lng:24.936864, cat:"관광", move:"도보 9분", note:"화요일 10:00~20:00 · 입장료 €21(할인)~23(일반) · 현재 사미족 미술전 등 3개 전시 동시 진행" },
       { t:"16:50", name:"K-Supermarket Kamppi", lat:60.169563, lng:24.932668, cat:"쇼핑", move:"도보 4분, Kiasma 바로 옆", note:"매일 6:30~23:00(일 9-23) · 자일리톨 껌·치약, Fazer 초콜릿, 살미아키 민트 — 팀 선물용 · K·S그룹은 상품 구색 거의 동일" },
       { t:"17:05", name:"Moomin Shop Lasipalatsi", lat:60.169873, lng:24.937008, cat:"쇼핑", move:"도보 3분", note:"매일 10:00~19:00(일 11-18) · 머그컵·에코백 등 캐릭터 굿즈 — 팀 선물용 · Forum점은 폐업" },
       { t:"17:40", name:"숙소로 이동", lat:60.160012, lng:24.947378, cat:"이동", move:"🚋 트램 약 15분 또는 도보 25분" },
       { t:"18:30", name:"저녁은 집에서", lat:60.160012, lng:24.947378, cat:"식사", note:"필요하면 Alepa Ullanlinna(도보 3분, ~23시)에서 장보기" },
-      { alt:true, t:"", name:"Kaivopuisto 공원 · Café Ursula", lat:60.155703, lng:24.955690, cat:"관광", note:"시간·체력 남으면 · 숙소 도보 12분 · 바다 전망 공원+카페" },
+      { alt:true, t:"", name:"Kaivopuisto 공원 · Café Ursula", g:"Kaivopuisto", lat:60.155703, lng:24.955690, cat:"관광", note:"시간·체력 남으면 · 숙소 도보 12분 · 바다 전망 공원+카페" },
       { alt:true, t:"", name:"Restaurant Sea Horse", lat:60.158666, lng:24.946446, cat:"식사", note:"밥 대신 외식하고 싶다면 · 숙소 도보 3분 · 화요일 12:00~22:00" }
     ]},
     { id:7, color:"#4E6E8A", theme:"헬싱키 → 한국", date:"9/16 (수)", iso:"2026-09-16", stops:[
-      { t:"09:30", name:"Huvilakatu 알록달록 유겐드 주택가", lat:60.156767, lng:24.943395, cat:"관광", move:"숙소에서 도보 6분", note:"Eira·Ullanlinna 경계의 컬러풀한 아르누보(유겐드) 연립주택 거리 · 무료 · 교통비 없음" },
-      { t:"10:00", name:"Eira 해안 산책 · Eira 병원 건물", lat:60.157884, lng:24.941514, cat:"관광", move:"도보 5분", note:"1905년 지어진 아르누보 건물 · 무료 · 바다 쪽으로 트인 산책로" },
-      { alt:true, t:"", name:"건축·디자인 박물관", lat:60.163032, lng:24.946391, cat:"관광", note:"수요일 11:00~18:00 · 숙소서 도보 3분 · 입장료 €22(Design Museum·건축박물관 각각 별도) · 걷기 대신 실내를 원하면 · 단 11시 개관이라 1시간만 가능" },
+      { t:"09:30", name:"Huvilakatu 알록달록 유겐드 주택가", g:"Huvilakatu", gid:"ChIJZ7TGZrcLkkYRMZA3D7vTaUE", lat:60.156767, lng:24.943395, cat:"관광", move:"숙소에서 도보 6분", note:"Eira·Ullanlinna 경계의 컬러풀한 아르누보(유겐드) 연립주택 거리 · 무료 · 교통비 없음" },
+      { t:"10:00", name:"Eira 해안 산책 · Eira 병원 건물", g:"Eiranranta", gid:"ChIJPxsCH7ELkkYRNoycEjwpBdY", lat:60.157884, lng:24.941514, cat:"관광", move:"도보 5분", note:"1905년 지어진 아르누보 건물 · 무료 · 바다 쪽으로 트인 산책로" },
+      { alt:true, t:"", name:"건축·디자인 박물관", g:"Architecture & Design Museum", gid:"ChIJZYptUMgLkkYR-n3bf3ljxOA", lat:60.163032, lng:24.946391, cat:"관광", note:"수요일 11:00~18:00 · 숙소서 도보 3분 · 입장료 €22(Design Museum·건축박물관 각각 별도) · 걷기 대신 실내를 원하면 · 단 11시 개관이라 1시간만 가능" },
       { t:"10:45", name:"숙소 복귀 · 짐 정리", lat:60.160012, lng:24.947378, cat:"이동", move:"도보 10분" },
       { t:"12:00", name:"숙소 체크아웃", lat:60.160012, lng:24.947378, cat:"이동" },
       { t:"12:15", name:"점심 — Fazer Café", lat:60.168647, lng:24.947674, cat:"식사", move:"도보 12분", note:"역 가는 길 · 매일 7:30~22:00" },
-      { t:"13:30", name:"헬싱키 중앙역 도착", lat:60.171873, lng:24.941422, cat:"이동", move:"도보 8분" },
-      { t:"13:40", name:"공항행 열차(Ring Rail I/P) 탑승", lat:60.171873, lng:24.941422, cat:"이동", move:"ABC권 €4.80 · 약 30분", note:"⚠️ 2026년 I·P선 공사로 감축 운행 이력 있음 — 전날 HSL 앱에서 운행 확인 · 대체편은 600번 버스(24시간 운행, 같은 ABC권)" },
-      { t:"14:10", name:"헬싱키 공항(HEL) 도착", lat:60.317945, lng:24.949624, cat:"이동", note:"17:30 출발까지 약 3시간20분 여유" },
-      { t:"17:30", name:"HEL 출발 (AY0041)", lat:60.317945, lng:24.949624, cat:"이동" }
+      { t:"13:30", name:"헬싱키 중앙역 도착", g:"Helsingin päärautatieasema", gid:"ChIJ25LjEc0LkkYRmSG_4N6eC1Y", lat:60.171873, lng:24.941422, cat:"이동", move:"도보 8분" },
+      { t:"13:40", name:"공항행 열차(Ring Rail I/P) 탑승", g:"Helsingin päärautatieasema", gid:"ChIJ25LjEc0LkkYRmSG_4N6eC1Y", lat:60.171873, lng:24.941422, cat:"이동", move:"ABC권 €4.80 · 약 30분", note:"⚠️ 2026년 I·P선 공사로 감축 운행 이력 있음 — 전날 HSL 앱에서 운행 확인 · 대체편은 600번 버스(24시간 운행, 같은 ABC권)" },
+      { t:"14:10", name:"헬싱키 공항(HEL) 도착", g:"Helsinki Airport", gid:"ChIJsaJij2X4jUYRlrMoLAHZ8Ps", lat:60.317945, lng:24.949624, cat:"이동", note:"17:30 출발까지 약 3시간20분 여유" },
+      { t:"17:30", name:"HEL 출발 (AY0041)", g:"Helsinki Airport", gid:"ChIJsaJij2X4jUYRlrMoLAHZ8Ps", lat:60.317945, lng:24.949624, cat:"이동" }
     ]},
     { id:8, color:"#7A4E97", theme:"한국 도착", date:"9/17 (목)", iso:"2026-09-17", stops:[
-      { t:"11:20", name:"인천(ICN) 도착", lat:37.4602, lng:126.4407, cat:"이동" }
+      { t:"11:20", name:"인천(ICN) 도착", g:"Incheon International Airport", gid:"ChIJWfpeOoOaezUR1L5cy5agS40", lat:37.4602, lng:126.4407, cat:"이동" }
     ]}
   ],
   food: [
-    { n:"Reykjavík Roasters", c:"카페", lat:64.1436111, lng:-21.9266667, r:4.6, h:"매일 7:00~17:00", m:"자가배전 · 시내 중심" },
-    { n:"Reykjavík Roasters (Brautarholt 2)", c:"카페", lat:64.141668, lng:-21.911438, r:4.6, h:"매일 7:00~17:00", m:"좌석 많고 작업하기 좋음 · 숙소에서 도보 4분" },
-    { n:"Braud & Co", c:"빵집", lat:64.1440791, lng:-21.9259781, r:4.8, h:"매일 6:30~17:00", m:"시나몬번 유명 · 좌석 적음" },
-    { n:"Braud & Co (Laugavegur 180)", c:"빵집", lat:64.140238, lng:-21.895288, r:4.8, h:"평일 7:30~16:00, 주말 8:00~15:00", m:"동쪽 지점 · N1 주유소와 한 건물 · 주말 마감 이르니 주의" },
+    { n:"Reykjavík Roasters", g:"Reykjavík Roasters Kárastígur 1", c:"카페", lat:64.1436111, lng:-21.9266667, r:4.6, h:"매일 7:00~17:00", m:"자가배전 · 시내 중심" },
+    { n:"Reykjavík Roasters (Brautarholt 2)", g:"Reykjavík Roasters Brautarholt 2", c:"카페", lat:64.141668, lng:-21.911438, r:4.6, h:"매일 7:00~17:00", m:"좌석 많고 작업하기 좋음 · 숙소에서 도보 4분" },
+    { n:"Braud & Co", g:"Brauð & Co Frakkastígur 16", c:"빵집", lat:64.1440791, lng:-21.9259781, r:4.8, h:"매일 6:30~17:00", m:"시나몬번 유명 · 좌석 적음" },
+    { n:"Braud & Co (Laugavegur 180)", g:"Brauð & Co Laugavegur 180", gid:"ChIJmQRN7ht11kgR-I7v5mwE94g", c:"빵집", lat:64.140238, lng:-21.895288, r:4.8, h:"평일 7:30~16:00, 주말 8:00~15:00", m:"동쪽 지점 · N1 주유소와 한 건물 · 주말 마감 이르니 주의" },
     { n:"Sandholt", c:"빵집", lat:64.1450318, lng:-21.9263398, r:4.6, h:"매일 7:30~18:00", m:"브런치 겸 베이커리 · 대기 있음 · Braud & Co 마감 놓쳤을 때 대안" },
     { n:"BakaBaka", c:"빵집", lat:64.146972, lng:-21.935733, r:4.4, h:"매일 8:00~22:00 (금·토 ~23:00)", m:"늦게까지 여는 베이커리 · 카다멈번·아몬드 크루아상 · 저녁엔 피자·와인바" },
     { n:"Bæjarins Beztu Pylsur", c:"간식", lat:64.1481882, lng:-21.9378861, r:4.4, h:"매일 9:00~ (요일별 마감 상이)", m:"아이슬란드 대표 핫도그 · 항상 줄" },
-    { n:"Vínyl Bistro (Kaffi Vínyl)", c:"카페", lat:64.1449656, lng:-21.9223586, r:4.6, h:"", m:"비건 전문 · 레코드 인테리어" },
+    { n:"Vínyl Bistro (Kaffi Vínyl)", g:"Kaffi Vínyl", c:"카페", lat:64.1449656, lng:-21.9223586, r:4.6, h:"", m:"비건 전문 · 레코드 인테리어" },
     { n:"Café Loki", c:"식사", lat:64.1424027, lng:-21.9288523, r:4.5, h:"매일 8:00~22:00", m:"전통 아이슬란드 음식 · 램수프·호밀빵아이스크림, 교회 바로 옆" },
     { n:"Messinn", c:"식사", lat:64.1465831, lng:-21.9377268, r:4.6, h:"매일 11:30~22:00", m:"해산물 전문 · 예약 권장 · 갑각류 메뉴 많으니 생선요리로 주문" },
-    { n:"Kolaportið 벼룩시장", c:"쇼핑", lat:64.1489329, lng:-21.9387749, r:4.0, h:"토·일 11:00~17:00만", m:"빈티지·수공예품, 평일 휴무" },
-    { n:"Marshall House (Kling & Bang · Living Art Museum)", c:"관광", lat:64.1562553, lng:-21.9391502, r:4.4, h:"화·수·금·토·일 12:00~18:00, 목 12:00~21:00, 월 휴무", m:"Kling & Bang, Living Art Museum(Nýlistasafnið), Studio Ólafur Elíasson 3곳 · 전부 무료입장" },
-    { n:"Reykjavík Art Museum (Hafnarhús)", c:"관광", lat:64.149139, lng:-21.940938, r:4.3, h:"매일 10:00~17:00 (목 ~22:00)", m:"컨템포러리 아트 · Erró 상설전" },
+    { n:"Kolaportið 벼룩시장", g:"Kolaportið Market", gid:"ChIJw-3c7rl01kgRxaYZSZCbjjk", c:"쇼핑", lat:64.1489329, lng:-21.9387749, r:4.0, h:"토·일 11:00~17:00만", m:"빈티지·수공예품, 평일 휴무" },
+    { n:"Marshall House (Kling & Bang · Living Art Museum)", g:"The Marshall House", gid:"ChIJD9BsD9V01kgR1RvPvsd7h14", c:"관광", lat:64.1562553, lng:-21.9391502, r:4.4, h:"화·수·금·토·일 12:00~18:00, 목 12:00~21:00, 월 휴무", m:"Kling & Bang, Living Art Museum(Nýlistasafnið), Studio Ólafur Elíasson 3곳 · 전부 무료입장" },
+    { n:"Reykjavík Art Museum (Hafnarhús)", g:"Reykjavík Art Museum – Hafnarhús", gid:"ChIJNV3Fe7901kgRJLUPv8oYN2k", c:"관광", lat:64.149139, lng:-21.940938, r:4.3, h:"매일 10:00~17:00 (목 ~22:00)", m:"컨템포러리 아트 · Erró 상설전" },
     { n:"National Gallery of Iceland", c:"관광", lat:64.144157, lng:-21.938863, r:4.2, h:"매일 10:00~17:00", m:"기획전 중심 · House of Collections 동시 입장 · 입장료 약 1,700 ISK · 시티카드 커버" },
     { n:"National Museum of Iceland", c:"관광", lat:64.141615, lng:-21.948578, r:4.5, h:"매일 10:00~17:00", m:"아이슬란드 정착사~현대 통사 · 입장료 약 2,500 ISK · 시티카드 커버 · 카페·무료 라커 있음" },
     { n:"Ásmundarsafn", c:"관광", lat:64.141631, lng:-21.885167, r:4.6, h:"매일 13:00~17:00", m:"조각가 Ásmundur Sveinsson의 집·작업실 · 입장료 2,550 ISK(3개 지점 공통) · 야외 조각정원 무료" },
-    { n:"Reykjavík Art Museum (Kjarvalsstaðir)", c:"관광", lat:64.137915, lng:-21.913477, r:4.4, h:"매일 10:00~17:00", m:"Klambratún 공원 안 · Kjarval 상설전 · 입장료 2,550 ISK(3개 지점 공통) · 시티카드 수령처 · 카페 평 좋음" },
+    { n:"Reykjavík Art Museum (Kjarvalsstaðir)", g:"Kjarvalsstaðir", c:"관광", lat:64.137915, lng:-21.913477, r:4.4, h:"매일 10:00~17:00", m:"Klambratún 공원 안 · Kjarval 상설전 · 입장료 2,550 ISK(3개 지점 공통) · 시티카드 수령처 · 카페 평 좋음" },
     { n:"The Settlement Exhibition", c:"관광", lat:64.147399, lng:-21.942501, r:4.5, h:"매일 10:00~17:00", m:"1000년 전 롱하우스 발굴 유적 · 입장료 약 2,500 ISK · 시티카드 커버 및 수령처" },
-    { n:"Sólfarið (Sun Voyager)", c:"관광", lat:64.147631, lng:-21.922285, r:4.6, h:"24시간", m:"해안가 바이킹 배 형상 조각 · 무료" },
-    { n:"Höfði 하우스", c:"관광", lat:64.151667, lng:-21.909167, r:4.4, h:"외관만 상시", m:"1986년 레이건-고르바초프 정상회담 장소 · 무료 · Sólfarið에서 도보 9분" },
+    { n:"Sólfarið (Sun Voyager)", g:"Sólfarið (Sun Voyager)", c:"관광", lat:64.147631, lng:-21.922285, r:4.6, h:"24시간", m:"해안가 바이킹 배 형상 조각 · 무료" },
+    { n:"Höfði 하우스", g:"Höfði House", gid:"ChIJ7Ybm7MV01kgR74DMI4hjl_E", c:"관광", lat:64.1465149, lng:-21.9063612, r:4.4, h:"외관만 상시", m:"1986년 레이건-고르바초프 정상회담 장소 · 무료 · Sólfarið에서 도보 9분" },
     { n:"Akkeri við Nýjabæjarvör", c:"관광", lat:64.160321, lng:-22.003841, r:4.4, h:"24시간", m:"Seltjarnarnes 북쪽 해안 · 11번 버스 30분 · 맑으면 Snæfellsjökull 빙하, Grótta 등대 원경 · 오로라 명소" },
-    { n:"Grótta 등대", c:"관광", lat:64.163889, lng:-22.021389, r:4.7, h:"24시간 (둑길은 조수 영향)", m:"Seltjarnarnes 반도 끝 · 등대까지 가려면 물때 확인 필수 · Kvika 족욕탕 근처" },
+    { n:"Grótta 등대", g:"Grótta lighthouse", c:"관광", lat:64.163889, lng:-22.021389, r:4.7, h:"24시간 (둑길은 조수 영향)", m:"Seltjarnarnes 반도 끝 · 등대까지 가려면 물때 확인 필수 · Kvika 족욕탕 근처" },
     { n:"Old Harbour HOT DOGS", c:"간식", lat:64.151190, lng:-21.944257, r:4.7, h:"매일 11:00~20:00", m:"Bæjarins Beztu보다 한적함 · 항구 끝자락 위치" },
     { n:"Saga Museum", c:"관광", lat:64.152547, lng:-21.951344, r:4.3, h:"매일 10:00~17:00", m:"바이킹 역사 체험형 · 오디오가이드 · 코스튬 촬영 가능" },
     { n:"Hallgrímskirkja", c:"관광", lat:64.1420229, lng:-21.9265494, r:4.6, h:"매일 10:00~17:00", m:"전망대 유료 · 랜드마크" },
     { n:"Harpa", c:"관광", lat:64.1502464, lng:-21.9322805, r:4.6, h:"매일 10:00~18/20:00", m:"건축·공연장 · 무료 관람 가능" },
     { n:"Mokka Kaffi", c:"카페", lat:64.146003, lng:-21.932405, r:4.5, h:"매일 9:00~18:00", m:"1958년 · 레이캬비크 최고(最古) 카페 · 와플 유명" },
-    { n:"Planta Kaffihús", c:"카페", lat:64.142538, lng:-21.920516, r:4.8, h:"화~일 8:00~17:00 (월 휴무)", m:"비건 카페 · 치즈번·수프 좋음" },
+    { n:"Planta Kaffihús", g:"Plantan Kaffihús", gid:"ChIJB-nzHeZ11kgRWs9x73hmTqY", c:"카페", lat:64.142538, lng:-21.920516, r:4.8, h:"화~일 8:00~17:00 (월 휴무)", m:"비건 카페 · 치즈번·수프 좋음" },
     { n:"The World of Icelandic Music", c:"관광", lat:64.149909, lng:-21.932813, r:5.0, h:"매일 10:00~20:00", m:"아이슬란드 음악사 인터랙티브 전시 · Harpa 근처" },
     { n:"Bernhöftsbakarí", c:"빵집", lat:64.147926, lng:-21.926752, r:4.7, h:"평일 7:30~17:00, 주말 8:00~16:00", m:"레이캬비크에서 가장 오래된 베이커리 · 도넛·치즈번" },
-    { n:"Vínbúðin (Austurstræti)", c:"쇼핑", lat:64.147678, lng:-21.939615, r:4.3, h:"월~토 11:00~18/19:00, 일요일 휴무", m:"국영 주류 전문점 · 아이슬란드는 여기서만 맥주·와인·양주 구매 가능" },
+    { n:"Vínbúðin (Austurstræti)", g:"Vínbúðin Austurstræti 10a", gid:"ChIJd-zbFC0L1kgR53rtKtupBZs", c:"쇼핑", lat:64.147678, lng:-21.939615, r:4.3, h:"월~토 11:00~18/19:00, 일요일 휴무", m:"국영 주류 전문점 · 아이슬란드는 여기서만 맥주·와인·양주 구매 가능" },
     { n:"Stjórnarfoss", c:"관광", lat:63.799752, lng:-18.061301, r:4.7, h:"", m:"Kirkjubæjarklaustur 주차장에서 도보 5분 · 사람 적고 조용한 폭포" },
     { n:"Skeiðará Bridge Monument", c:"관광", lat:63.984627, lng:-16.959378, r:4.2, h:"24시간", m:"1996년 빙하 홍수로 휘어진 다리 잔해 · 도로변 짧은 포토스톱" },
-    { n:"Sundhöll Reykjavíkur", c:"휴식", lat:64.141829, lng:-21.920652, r:4.7, h:"평일 6:30~22:00(요일별 상이), 주말 8:00~22:00", m:"1937년 · Hallgrímskirkja와 같은 건축가 설계 · 수영장+온탕+사우나 · 수영복 대여 가능" },
+    { n:"Sundhöll Reykjavíkur", g:"Sundhöll Reykjavíkur (Sundhöllin)", gid:"ChIJ273ekst01kgRqtzWxzEWjYU", c:"휴식", lat:64.141829, lng:-21.920652, r:4.7, h:"평일 6:30~22:00(요일별 상이), 주말 8:00~22:00", m:"1937년 · Hallgrímskirkja와 같은 건축가 설계 · 수영장+온탕+사우나 · 수영복 대여 가능" },
     { n:"Húrra", c:"나이트라이프", lat:64.1468123, lng:-21.9319778, r:4.3, h:"", m:"라이브뮤직 바 · 당일 라인업 확인 필요" },
     { n:"Skúli Craft Bar", c:"나이트라이프", lat:64.147554, lng:-21.941615, r:4.6, h:"매일 12:00~23:00 (목~토 ~01:00)", m:"레이캬비크 대표 크래프트 맥주바 · 테이스팅 플라이트 추천" },
     { n:"Skólavörðustígur", c:"쇼핑", lat:64.1444948, lng:-21.9303862, r:4.6, h:"", m:"무지개 거리 · 상점·카페 밀집" },
-    { n:"Oodi 도서관", c:"관광", lat:60.1736833, lng:24.9379191, r:4.8, h:"월~금 8:00~21:00, 토·일 10:00~20:00", m:"현대 건축 · 무료 입장" },
+    { n:"Oodi 도서관", g:"Helsinki Central Library Oodi", gid:"ChIJ67v8tsoLkkYR3XU-Jmnz2m4", c:"관광", lat:60.1736833, lng:24.9379191, r:4.8, h:"월~금 8:00~21:00, 토·일 10:00~20:00", m:"현대 건축 · 무료 입장" },
     { n:"Kiasma", c:"관광", lat:60.1715911, lng:24.9368643, r:4.2, h:"화 10-20, 수·목 10-18, 금 10-20, 토·일 10-17, 월 휴관", m:"컨템포러리 아트뮤지엄 · 입장료 €21(할인)~23(일반) · 현재 3개 전시 동시 진행" },
-    { n:"Design District Helsinki", c:"쇼핑", lat:60.1606089, lng:24.9466883, r:3.7, h:"매장별 상이, 대체로 평일 10-19", m:"스칸디나비아 디자인숍 밀집" },
-    { n:"Kallio 교회", c:"관광", lat:60.1843236, lng:24.9493571, r:4.5, h:"", m:"언덕 위 랜드마크 · 헬싱키 전망" },
+    { n:"Design District Helsinki", g:"Design District Helsinki", c:"쇼핑", lat:60.1606089, lng:24.9466883, r:3.7, h:"매장별 상이, 대체로 평일 10-19", m:"스칸디나비아 디자인숍 밀집" },
+    { n:"Kallio 교회", g:"Kallion kirkko (Kallio Church)", gid:"ChIJ99PtqioKkkYRViO9J-HMtQU", c:"관광", lat:60.1843236, lng:24.9493571, r:4.5, h:"", m:"언덕 위 랜드마크 · 헬싱키 전망" },
     { n:"Cafe Regatta", c:"카페", lat:60.1801568, lng:24.9117599, r:4.6, h:"매일 9:00~21:00", m:"해변 오두막 카페 · 시나몬번" },
     { n:"Fazer Café", c:"카페", lat:60.1686468, lng:24.9476736, r:4.4, h:"매일 7:30~22:00 (일 10-20)", m:"파제르 초콜릿 본점 카페" },
     { n:"Restaurant Story", c:"식사", lat:60.1661689, lng:24.9528382, r:4.2, h:"매일 8:00~17:00", m:"미트볼·순록 요리 · 올드마켓홀 근처" },
@@ -180,12 +180,12 @@ var DATA = {
     { n:"Café Ursula", c:"카페", lat:60.155195, lng:24.960609, r:4.2, h:"", m:"Kaivopuisto 안 바다 전망 카페 · 담요 대여 가능 · 연어수프는 점심에만" },
     { n:"Black And White Records", c:"쇼핑", lat:60.181030, lng:24.950194, r:4.2, h:"화~금 11:00~18:00, 토 ~15:00, 월 ~18:00, 일 휴무", m:"Kallio 레코드샵 · 핀란드 재즈·레게 등 로컬 추천 잘해줌" },
     { n:"Stupido Market Kallio", c:"쇼핑", lat:60.182122, lng:24.951137, r:4.6, h:"월~금 12:00~18:00, 토 ~17:00, 일 휴무", m:"레코드·중고 CD·의류 · Kallio 골목 구경 코스" },
-    { n:"Temppeliaukio 암석교회", c:"관광", lat:60.173025, lng:24.925235, r:4.4, h:"평일 9:00~17:00 (주말 예배로 중단 시간 있음)", m:"암반을 파서 만든 교회 · €8 · 음향 좋아 콘서트 열림" },
-    { n:"우스펜스키 성당", c:"관광", lat:60.168602, lng:24.959897, r:4.6, h:"화~금 9:30~16:00, 일 14-16, 월·토 휴무", m:"북유럽 최대 정교회 · 언덕 위라 항구 전망" },
+    { n:"Temppeliaukio 암석교회", g:"Temppeliaukion kirkko (Rock Church)", gid:"ChIJsQw2ZzEKkkYRn0OBJ6_9uoA", c:"관광", lat:60.173025, lng:24.925235, r:4.4, h:"평일 9:00~17:00 (주말 예배로 중단 시간 있음)", m:"암반을 파서 만든 교회 · €8 · 음향 좋아 콘서트 열림" },
+    { n:"우스펜스키 성당", g:"Uspenskin katedraali (Uspenski Cathedral)", gid:"ChIJ8Y2LJ9ILkkYRqUyx5jrKPaA", c:"관광", lat:60.168602, lng:24.959897, r:4.6, h:"화~금 9:30~16:00, 일 14-16, 월·토 휴무", m:"북유럽 최대 정교회 · 언덕 위라 항구 전망" },
     { n:"Finlandia Hall", c:"관광", lat:60.175699, lng:24.933609, r:4.3, h:"월~금 9-18, 토 11-18, 일 휴무", m:"Alvar Aalto 설계, 흰 대리석 외관 · Oodi에서 도보 4분 · 내부는 유료 전시·투어" },
     { n:"Huvilakatu", c:"관광", lat:60.156767, lng:24.943395, r:4.5, h:"24시간", m:"Eira·Ullanlinna 경계 컬러풀한 유겐드(아르누보) 연립주택 거리 · 숙소 도보 6분 · 무료" },
-    { n:"Eira Hospital 건물", c:"관광", lat:60.157884, lng:24.941514, r:4.1, h:"외관 상시", m:"1905년 아르누보 건물 · 숙소 도보 5분 · 무료" },
-    { n:"건축·디자인 박물관", c:"관광", lat:60.163032, lng:24.946391, r:4.1, h:"화 11:00~20:00, 수~일 11:00~18:00, 월 휴무", m:"숙소 도보 3분 · Design Museum(€22)·건축박물관(€22) 인접한 별개 건물, 티켓 각각 · Aalto 관련 전시" }
+    { n:"Eira Hospital 건물", g:"Eira Hospital and Medical Centre", gid:"ChIJBWJlDrcLkkYR2nUIgRb72Wk", c:"관광", lat:60.157884, lng:24.941514, r:4.1, h:"외관 상시", m:"1905년 아르누보 건물 · 숙소 도보 5분 · 무료" },
+    { n:"건축·디자인 박물관", g:"Architecture & Design Museum", gid:"ChIJZYptUMgLkkYR-n3bf3ljxOA", c:"관광", lat:60.163032, lng:24.946391, r:4.1, h:"화 11:00~20:00, 수~일 11:00~18:00, 월 휴무", m:"숙소 도보 3분 · Design Museum(€22)·건축박물관(€22) 인접한 별개 건물, 티켓 각각 · Aalto 관련 전시" }
   ],
   checklist: [
     { cat:"예약 · 티켓", items:[
@@ -249,18 +249,41 @@ function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;")
 function gmaps(lat,lng){
   return "https://www.google.com/maps/dir/?api=1&destination="+lat+","+lng+"&travelmode=walking";
 }
-/* 장소 이름 → 구글맵 정보 페이지 (영업시간·리뷰·사진) */
-function gplace(name, lat, lng){
-  var raw = String(name||"");
+/* 항목(stop/food)에 실제 장소명이 있으면 그걸 쓴다 — 없으면 null */
+function placeName(o){ return (o && o.g) ? o.g : null; }
+
+/* 팝업·리스트에 표시할 이름 — 실제 장소명 우선, 없으면 계획 이름 */
+function displayName(o){ return (o && o.g) ? o.g : String((o && (o.name || o.n)) || ""); }
+
+/* 항목 → 구글맵 장소 페이지 (영업시간·리뷰·사진)
+   1) gid(구글 Place ID)가 있으면 그 장소로 정확히 열기
+   2) g(실제 장소명)가 있으면 그 이름으로 검색
+   3) 둘 다 없으면 기존 방식대로 계획 이름에서 추출 */
+function gplace(o){
+  var lat = o.lat, lng = o.lng;
+  var real = placeName(o);
+
+  if (real && o.gid){
+    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(real) +
+           "&query_place_id=" + encodeURIComponent(o.gid);
+  }
+
+  var raw = real || String(o.name || o.n || "");
+
   /* 출발·도착·체크인 같은 동작 행은 이름 검색이 무의미 → 좌표로 열기 */
-  if (/출발|도착|체크인|체크아웃|픽업|복귀|탑승|짐 |짐정리|짐 정리|준비|휴식|보관|장보기/.test(raw)){
+  if (!real && /출발|도착|체크인|체크아웃|픽업|복귀|탑승|하차|짐|준비|휴식|보관|장보기|숙소|집에서|오로라 투어|투어 종료|이동/.test(raw)){
     return "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
   }
-  var q = raw.split("—").pop()
-            .replace(/\(.*?\)/g, "")
-            .replace(/[⭐⏰⚠️]/g, "").trim();
-  if (lat > 64.10 && lat < 64.20 && lng > -22.10 && lng < -21.80) q += " Reykjavík";
-  else if (lat > 60.10 && lat < 60.35 && lng > 24.80 && lng < 25.05) q += " Helsinki";
+
+  var q = real ? real
+              : raw.split("—").pop()
+                   .replace(/\(.*?\)/g, "")
+                   .replace(/[⭐⏰⚠️]/g, "").trim();
+  if (lat > 64.10 && lat < 64.20 && lng > -22.10 && lng < -21.80){
+    if (q.indexOf("Reykjav") === -1) q += " Reykjavík";
+  } else if (lat > 60.10 && lat < 60.35 && lng > 24.80 && lng < 25.05){
+    if (q.indexOf("Helsin") === -1) q += " Helsinki";
+  }
   return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
 }
 function dayById(id){ return DAYS.filter(function(d){ return d.id===id; })[0]; }
@@ -341,6 +364,7 @@ function stopHTML(s, i, day, label){
                esc(s.alt ? s.cat : s.t + " · " + s.cat) +
              "</div>" +
              "<div class='nm'>" + esc(s.name) + "</div>" +
+             (placeName(s) ? "<div class='pl'>" + esc(s.g) + "</div>" : "") +
              (s.note ? "<div class='nt'>" + esc(s.note) + "</div>" : "") +
              "<a class='go' href='" + gmaps(s.lat,s.lng) + "' target='_blank' rel='noopener'>길찾기</a>" +
            "</div></div>";
@@ -404,7 +428,7 @@ function renderFoodList(){
     var col = FOOD_COLOR[f.c] || "#666";
     h += "<div class='fcard'><div class='r1'>" +
            "<span class='cat' style='background:" + col + "'>" + esc(f.c) + "</span>" +
-           "<a class='nm nmlink' href='" + gplace(f.n,f.lat,f.lng) + "' target='_blank' rel='noopener'>" + esc(f.n) + "</a>" +
+           "<a class='nm nmlink' href='" + gplace(f) + "' target='_blank' rel='noopener'>" + esc(displayName(f)) + "</a>" +
            (f.r ? "<span class='rt'>★ " + f.r + "</span>" : "") +
          "</div>" +
          (f.h ? "<div class='hr'>🕘 " + esc(f.h) + "</div>" : "") +
@@ -538,7 +562,8 @@ function drawDay(fit){
         iconSize:[30,30], iconAnchor:[15,28], popupAnchor:[0,-26] })
     }).bindPopup(
       "<div class='pp-c' style='color:"+col+"'>"+(s.alt ? "대안 · " : esc(s.t)+" · ")+esc(s.cat)+"</div>"+
-      "<div class='pp-n'><a class='nmlink' href='"+gplace(s.name,s.lat,s.lng)+"' target='_blank' rel='noopener'>"+LB[i]+". "+esc(s.name)+"</a></div>"+
+      "<div class='pp-n'><a class='nmlink' href='"+gplace(s)+"' target='_blank' rel='noopener'>"+LB[i]+". "+esc(displayName(s))+"</a></div>"+
+      (placeName(s) ? "<div class='pp-p'>"+esc(s.name)+"</div>" : "")+
       (s.note ? "<div class='pp-t'>"+esc(s.note)+"</div>" : "")+
       "<a class='pp-l' href='"+gmaps(s.lat,s.lng)+"' target='_blank' rel='noopener'>📍 길찾기</a>"
     ).addTo(dayLayer);
@@ -610,7 +635,8 @@ function drawFood(){
       color:"#fff", fillColor:col, fillOpacity:1
     }).bindPopup(
       "<div class='pp-c' style='color:"+col+"'>"+esc(f.c)+(f.r?" · ★"+f.r:"")+"</div>"+
-      "<div class='pp-n'><a class='nmlink' href='"+gplace(f.n,f.lat,f.lng)+"' target='_blank' rel='noopener'>"+esc(f.n)+"</a></div>"+
+      "<div class='pp-n'><a class='nmlink' href='"+gplace(f)+"' target='_blank' rel='noopener'>"+esc(displayName(f))+"</a></div>"+
+      (placeName(f) ? "<div class='pp-p'>"+esc(f.n)+"</div>" : "")+
       (f.h ? "<div class='pp-t'>🕘 "+esc(f.h)+"</div>" : "")+
       (f.m ? "<div class='pp-t'>"+esc(f.m)+"</div>" : "")+
       "<a class='pp-l' href='"+gmaps(f.lat,f.lng)+"' target='_blank' rel='noopener'>📍 길찾기</a>"
