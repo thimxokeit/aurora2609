@@ -1,4 +1,4 @@
-ㅣ/* 아이슬란드·핀란드 여행 — 앱 로직
+/* 아이슬란드·핀란드 여행 — 앱 로직
    · 지도 + 일정 시트를 한 화면에 (peek 3행 / 끌어올리면 전체)
    · 맛집 카테고리는 단일 선택 필터 (누르면 그 카테고리만 표시)
    · 체크리스트 탭: localStorage로 체크 상태 저장
@@ -78,13 +78,14 @@ var DATA = {
       { alt:true, t:"", name:"Restaurant Fisken på Disken", lat:60.169378, lng:24.933887, cat:"식사", note:"Kosmos에서 도보 6분 · 화요일 11:00~22:00 · 연어수프(Lohikeitto) 원조로 유명, 핀란드 전역 카피 레시피의 원본" },
       { alt:true, t:"", name:"Lappi Ravintola", lat:60.166681, lng:24.936945, cat:"식사", note:"Kosmos에서 도보 4분 · 화요일 16:00~22:00(점심 불가) · 순록·연어수프 · 평점 4.5(2,702) · 저녁으로 바꾸면 여기 추천" },
       { alt:true, t:"", name:"Savoy", lat:60.166977, lng:24.947335, cat:"식사", note:"화요일 점심 11:30~16:00 · Alvar Aalto 설계 인테리어 · 파인다이닝, 가장 비쌈" },
-      { t:"14:00", name:"Moomin Shop Forum · S-market에서 선물 쇼핑", lat:60.169307, lng:24.938046, cat:"쇼핑", move:"바로 근처, 도보 2분", note:"Moomin Shop: 머그컵·에코백 등 캐릭터 굿즈 · S-market(24시간, 도보 3분): 자일리톨 껌·치약, Fazer 초콜릿, Läkerol·살미아키 민트 — 팀 선물용으로 무난" },
-      { t:"14:30", name:"Kiasma 컨템포러리 아트뮤지엄", lat:60.171591, lng:24.936864, cat:"관광", move:"도보 6분", note:"화요일 10:00~20:00 · 월요일 휴관" },
-      { t:"15:30", name:"Design District 쇼핑", lat:60.160609, lng:24.946688, cat:"쇼핑", move:"🚋 트램 10분 또는 도보 18분", note:"매장 대부분 ~18시" },
-      { t:"17:00", name:"Kallio 교회 · 동네 산책", lat:60.184324, lng:24.949357, cat:"관광", move:"🚋 트램 3/9번 약 15분 (AB권)", note:"언덕 위 랜드마크 · 헬싱키 전망" },
-      { t:"18:30", name:"숙소 복귀 · 저녁은 집에서", lat:60.160012, lng:24.947378, cat:"식사", move:"🚋 트램 약 20분 (AB권)", note:"필요하면 Alepa Ullanlinna(도보 3분, ~23시)에서 장보기" },
-      { alt:true, t:"", name:"Restaurant BLINIt", lat:60.187901, lng:24.945057, cat:"식사", note:"외식했다면 · Kallio에서 도보 8분 · 매일 12:00~22:00 · 블리니·보르시" },
-      { alt:true, t:"", name:"Saigon Bistro", lat:60.186453, lng:24.951620, cat:"식사", note:"외식했다면 · Kallio · 평점 4.9 · 화요일 ~20시 마감" }
+      { t:"14:00", name:"Kiasma 컨템포러리 아트뮤지엄", lat:60.171591, lng:24.936864, cat:"관광", move:"도보 6분", note:"화요일 10:00~20:00 · 월요일 휴관" },
+      { t:"15:00", name:"Design District 쇼핑", lat:60.160609, lng:24.946688, cat:"쇼핑", move:"🚋 트램 10분 또는 도보 18분", note:"⏰매장 대부분 ~18시 마감이라 먼저 · 선물은 이따 귀가길에" },
+      { t:"16:00", name:"Esplanadi 공원 · Kauppatori 항구 산책", lat:60.167665, lng:24.953678, cat:"관광", move:"도보 12분", note:"Day5에 못 갔던 곳 · 야외라 상시 개방 무료" },
+      { t:"17:00", name:"Kallio 교회 · 동네 산책", lat:60.184324, lng:24.949357, cat:"관광", move:"🚋 트램 약 15분", note:"언덕 위 랜드마크 · 헬싱키 전망" },
+      { t:"18:30", name:"Moomin Shop Forum · S-market에서 선물 쇼핑", lat:60.169307, lng:24.938046, cat:"쇼핑", move:"🚋 귀가하는 트램에서 Forum 정류장 하차 (약 15분)", note:"귀가길에 들르는 순서라 산 걸 오래 안 들고 다녀도 됨 · Moomin Shop: 머그컵·에코백 · S-market(24시간): 자일리톨 껌·치약, Fazer 초콜릿, 살미아키 민트 — 팀 선물용" },
+      { t:"19:00", name:"숙소 복귀 · 저녁은 집에서", lat:60.160012, lng:24.947378, cat:"식사", move:"도보 15분 또는 🚋 트램 5분", note:"필요하면 Alepa Ullanlinna(도보 3분, ~23시)에서 장보기" },
+      { alt:true, t:"", name:"Restaurant Sea Horse", lat:60.158666, lng:24.946446, cat:"식사", note:"밥 대신 외식하고 싶다면 · 숙소 도보 3분 · 화요일 12:00~22:00" },
+      { alt:true, t:"", name:"Restaurant BLINIt", lat:60.187901, lng:24.945057, cat:"식사", note:"Kallio에서 외식했다면 · 도보 8분 · 매일 12:00~22:00 · 블리니·보르시" }
     ]},
     { id:7, color:"#4E6E8A", theme:"헬싱키 → 한국", date:"9/16 (수)", iso:"2026-09-16", stops:[
       { t:"09:30", name:"Temppeliaukio 암석교회", lat:60.173025, lng:24.925235, cat:"관광", move:"🚋 트램 약 15분 (AB권 €3.20)", note:"수요일 9:00~17:00 · €8 · 암반을 파서 만든 교회, 음향이 뛰어나 콘서트도 열림" },
@@ -325,7 +326,7 @@ function stopHTML(s, i, day, label){
                (s.alt ? "<span class='altlabel sublabel'>대안</span> " : "") +
                esc(s.alt ? s.cat : s.t + " · " + s.cat) +
              "</div>" +
-             "<div class='nm'><a class='nmlink' href='" + gplace(s.name,s.lat,s.lng) + "' target='_blank' rel='noopener'>" + esc(s.name) + "</a></div>" +
+             "<div class='nm'>" + esc(s.name) + "</div>" +
              (s.note ? "<div class='nt'>" + esc(s.note) + "</div>" : "") +
              "<a class='go' href='" + gmaps(s.lat,s.lng) + "' target='_blank' rel='noopener'>길찾기</a>" +
            "</div></div>";
@@ -561,7 +562,7 @@ function renderSheetList(d){
   el.innerHTML = h;
   Array.prototype.forEach.call(el.querySelectorAll('.stop'), function(row){
     row.addEventListener('click', function(e){
-      if (e.target && (e.target.classList.contains('go') || e.target.classList.contains('nmlink'))) return;
+      if (e.target && e.target.classList.contains('go')) return;
       selectStop(parseInt(row.dataset.i,10), true);
     });
   });
